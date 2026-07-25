@@ -673,7 +673,7 @@ a{ color: inherit; text-decoration: none; }
 }
 
 .prose p{ margin: 0 0 22px; color: var(--text); }
-.prose p:first-of-type::first-letter{
+.prose > p:first-of-type::first-letter{
   font-family: var(--font-display);
   font-size: 58px;
   float:left;
@@ -737,7 +737,7 @@ a{ color: inherit; text-decoration: none; }
 .static-page .prose h2{ font-size: 22px; margin-top: 36px; }
 .static-page .prose ul{ color: var(--text); padding-left: 20px; }
 .static-page .prose li{ margin-bottom: 10px; }
-.static-page .prose p:first-of-type::first-letter{ all: unset; }
+.static-page .prose > p:first-of-type::first-letter{ all: unset; }
 
 /* ---------- Footer ---------- */
 
