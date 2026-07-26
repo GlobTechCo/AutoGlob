@@ -10,13 +10,17 @@
 <meta property="og:description" content="Provenance, paint, and paperwork — the three things that matter most.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80">
 <meta property="og:url" content="https://globtechco.github.io/ttn-finans/classic-car-auction-hammer-price.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/classic-car-auction-hammer-price.html">
 <meta property="og:site_name" content="AutoGlob">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Inside a Classic Car Auction: What Actually Drives the Hammer Price — AutoGlob">
 <meta name="twitter:description" content="Provenance, paint, and paperwork — the three things that matter most.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1200&q=80">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
 <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
@@ -24,13 +28,17 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html#latest">News</a>
       <a href="index.html#latest">Reviews</a>
       <a href="index.html#latest">Test Drives</a>
       <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html">Tools</a>
       <a href="about.html">About Us</a>
     </nav>
     <div class="header-actions">
@@ -55,7 +63,7 @@
       <span>6 min read</span>
     </div>
     <div class="article-hero-media">
-      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600&q=80" alt="Classic cars displayed at an auction house">
+      <img src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=1600&q=80" alt="Classic cars displayed at an auction house" loading="lazy">
     </div>
   </div>
 </section>
@@ -65,7 +73,7 @@
     <p>Two visually identical classic cars can sell for wildly different prices at the same auction, sometimes by a factor of three or more. To anyone outside the collector market, this looks irrational. To the specialists who work these sales, it's entirely predictable once you know what's actually being priced.</p>
 
     <figure>
-      <img src="https://images.unsplash.com/photo-1748621249703-a6abe94bae9c?w=1400&q=80" alt="Wheel and tire condition is scrutinized closely before bidding begins.">
+      <img src="https://images.unsplash.com/photo-1748621249703-a6abe94bae9c?w=1400&q=80" alt="Wheel and tire condition is scrutinized closely before bidding begins." loading="lazy">
       <figcaption>Wheel and tire condition is scrutinized closely before bidding begins.</figcaption>
     </figure>
 
@@ -81,7 +89,7 @@
 
     <p>The auctioneer's chant and the paddle-raising are theater layered on top of decisions bidders have usually already made before the car crosses the block. Most serious buyers set a hard ceiling based on comparable sales data, inspection reports, and how badly they specifically want that car — and the final hammer price is rarely a surprise to anyone who did their homework beforehand.</p>
     <figure>
-      <img src="https://images.unsplash.com/photo-1760161339261-56487b766a17?w=1400&q=80" alt="Interior originality can matter more to bidders than a flawless repaint.">
+      <img src="https://images.unsplash.com/photo-1760161339261-56487b766a17?w=1400&q=80" alt="Interior originality can matter more to bidders than a flawless repaint." loading="lazy">
       <figcaption>Interior originality can matter more to bidders than a flawless repaint.</figcaption>
     </figure>
 
@@ -131,7 +139,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
       </div>
@@ -166,6 +177,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

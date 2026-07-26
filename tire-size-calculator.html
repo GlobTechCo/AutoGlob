@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tire Size Calculator — AutoGlob</title>
+<meta name="description" content="Compare two tire sizes and see the exact diameter difference, sidewall height, and speedometer error.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tire Size Calculator — AutoGlob">
+<meta property="og:description" content="Compare two tire sizes and see the exact diameter difference, sidewall height, and speedometer error.">
+<meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+<meta property="og:url" content="https://globtechco.github.io/ttn-finans/tire-size-calculator.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/tire-size-calculator.html">
+<meta property="og:site_name" content="AutoGlob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Tire Size Calculator — AutoGlob">
+<meta name="twitter:description" content="Compare two tire sizes and see the exact diameter difference, sidewall height, and speedometer error.">
+<meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#latest">News</a>
+      <a href="index.html#latest">Reviews</a>
+      <a href="index.html#latest">Test Drives</a>
+      <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container static-page">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / Tire Size Calculator</p>
+  <h1 class="page-title">Tire Size Calculator</h1>
+  <p class="tool-intro">Enter the two tire sizes you want to compare (format: width/aspect ratio R rim diameter, e.g. 225/45R17). See the overall diameter, sidewall height, and how much a size change would throw off your speedometer.</p>
+
+  <div class="tool-layout">
+    <div class="tool-form">
+      <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:var(--cyan);margin:0;">Current Tire</p>
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="t1w">Width (mm)</label>
+        <input type="number" id="t1w" placeholder="225">
+      </div>
+      <div class="tool-field">
+        <label for="t1a">Aspect Ratio</label>
+        <input type="number" id="t1a" placeholder="45">
+      </div>
+      <div class="tool-field">
+        <label for="t1r">Rim (in)</label>
+        <input type="number" id="t1r" placeholder="17">
+      </div>
+      </div>
+      <p style="font-family:var(--font-mono);font-size:11px;letter-spacing:0.5px;text-transform:uppercase;color:var(--cyan);margin:10px 0 0;">New Tire</p>
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="t2w">Width (mm)</label>
+        <input type="number" id="t2w" placeholder="235">
+      </div>
+      <div class="tool-field">
+        <label for="t2a">Aspect Ratio</label>
+        <input type="number" id="t2a" placeholder="40">
+      </div>
+      <div class="tool-field">
+        <label for="t2r">Rim (in)</label>
+        <input type="number" id="t2r" placeholder="18">
+      </div>
+      </div>
+      <button class="btn" id="calcBtn" type="button">Compare Sizes</button>
+      <p id="calcError" class="tool-error" style="display:none;"></p>
+    </div>
+
+    <div class="tool-result" id="resultBox" style="display:none;">
+      <h3>Result</h3>
+      <div class="tool-result-value" id="diffVal">—</div>
+      <p class="tool-result-label" id="diffLabel">diameter difference</p>
+      <table class="tool-result-table">
+        <tr><td>Current diameter</td><td id="d1">—</td></tr>
+        <tr><td>New diameter</td><td id="d2">—</td></tr>
+        <tr><td>Sidewall height change</td><td id="sidewall">—</td></tr>
+        <tr><td>Speedometer error at 60</td><td id="speedo">—</td></tr>
+      </table>
+      <p class="tool-disclaimer">Diameter is calculated from standard tire geometry (width × aspect ratio × 2 + rim diameter). Always confirm fitment with your vehicle's manual or a tire shop before buying.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="max-width:none;">
+    <h2>How tire size math works</h2>
+    <p>A tire size like 225/45R17 breaks down as: 225mm section width, 45% aspect ratio (sidewall height as a percentage of width), mounted on a 17-inch rim. Overall diameter = rim diameter + (2 × sidewall height), where sidewall height = width × (aspect ratio / 100).</p>
+    <p>Changing tire diameter affects your speedometer reading and odometer accuracy, since both are calibrated for the original tire's revolutions per mile. A diameter increase makes your speedometer under-read your real speed; a decrease makes it over-read.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          </picture>
+        </a>
+        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Test Drives</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoGlob. All rights reserved.</span>
+      <span>Made for people who read the whole story.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>
+function calc(){
+  const w1=+document.getElementById('t1w').value, a1=+document.getElementById('t1a').value, r1=+document.getElementById('t1r').value;
+  const w2=+document.getElementById('t2w').value, a2=+document.getElementById('t2a').value, r2=+document.getElementById('t2r').value;
+  const err=document.getElementById('calcError');
+  if(!w1||!a1||!r1||!w2||!a2||!r2){ err.textContent='Please fill in all six fields.'; err.style.display='block'; return; }
+  err.style.display='none';
+  const sw1=w1*(a1/100), sw2=w2*(a2/100);
+  const d1=r1*25.4 + 2*sw1, d2=r2*25.4 + 2*sw2;
+  const diffPct=((d2-d1)/d1*100);
+  document.getElementById('d1').textContent=(d1/25.4).toFixed(2)+' in ('+d1.toFixed(0)+' mm)';
+  document.getElementById('d2').textContent=(d2/25.4).toFixed(2)+' in ('+d2.toFixed(0)+' mm)';
+  document.getElementById('sidewall').textContent=(sw2-sw1>=0?'+':'')+(sw2-sw1).toFixed(1)+' mm';
+  document.getElementById('speedo').textContent='Shows '+(60*(1+diffPct/100)).toFixed(1)+' mph at real 60 mph';
+  document.getElementById('diffVal').innerHTML=(diffPct>=0?'+':'')+diffPct.toFixed(2)+'<span>%</span>';
+  document.getElementById('diffLabel').textContent='overall diameter change';
+  document.getElementById('resultBox').style.display='block';
+}
+document.getElementById('calcBtn').addEventListener('click',calc);
+</script>
+</body>
+</html>

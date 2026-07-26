@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Car Depreciation Calculator — AutoGlob</title>
+<meta name="description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Car Depreciation Calculator — AutoGlob">
+<meta property="og:description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
+<meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+<meta property="og:url" content="https://globtechco.github.io/ttn-finans/depreciation-calculator.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/depreciation-calculator.html">
+<meta property="og:site_name" content="AutoGlob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Car Depreciation Calculator — AutoGlob">
+<meta name="twitter:description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
+<meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#latest">News</a>
+      <a href="index.html#latest">Reviews</a>
+      <a href="index.html#latest">Test Drives</a>
+      <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container static-page">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / Car Depreciation Calculator</p>
+  <h1 class="page-title">Car Depreciation Calculator</h1>
+  <p class="tool-intro">Enter a car's current price and age to project its approximate resale value years from now, using typical depreciation rates (steeper in the first three years, then leveling off).</p>
+
+  <div class="tool-layout">
+    <div class="tool-form">
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="currentPrice">Current Value</label>
+        <input type="number" id="currentPrice" placeholder="30000">
+      </div>
+      <div class="tool-field">
+        <label for="years">Years to Project</label>
+        <input type="number" id="years" placeholder="5">
+      </div>
+      </div>
+      <button class="btn" id="calcBtn" type="button">Project Value</button>
+      <p id="calcError" class="tool-error" style="display:none;"></p>
+    </div>
+
+    <div class="tool-result" id="resultBox" style="display:none;">
+      <h3>Result</h3>
+      <div class="tool-result-value" id="futureValue">—</div>
+      <p class="tool-result-label" id="futureLabel">projected value</p>
+      <table class="tool-result-table" id="yearTable"></table>
+      <p class="tool-disclaimer">Real depreciation varies enormously by brand, model, mileage, condition and market demand. Luxury and EV models often depreciate faster; some limited-production cars appreciate. Treat this as a rough guideline only.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="max-width:none;">
+    <h2>Typical depreciation curve</h2>
+    <p>Most new cars lose roughly 20-25% of their value in the first year, then around 10-15% per year after that as the rate of decline slows. This calculator applies a simplified version of that curve: a steeper drop in years one through three, tapering to a gentler decline afterward.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          </picture>
+        </a>
+        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Test Drives</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoGlob. All rights reserved.</span>
+      <span>Made for people who read the whole story.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>
+function calc(){
+  const price=+document.getElementById('currentPrice').value;
+  const years=+document.getElementById('years').value;
+  const err=document.getElementById('calcError');
+  if(!price||!years){ err.textContent='Please fill in both fields.'; err.style.display='block'; return; }
+  err.style.display='none';
+  const rates=[0.20,0.15,0.12,0.10,0.09,0.08,0.07,0.07,0.06,0.06];
+  let value=price;
+  let rows='';
+  for(let y=1;y<=Math.min(years,15);y++){
+    const rate = rates[Math.min(y-1,rates.length-1)];
+    value = value*(1-rate);
+    rows += `<tr><td>Year ${y}</td><td>$${value.toFixed(0)}</td></tr>`;
+  }
+  document.getElementById('futureValue').innerHTML='$'+value.toFixed(0);
+  document.getElementById('futureLabel').textContent='estimated value after '+years+' year'+(years==1?'':'s');
+  document.getElementById('yearTable').innerHTML=rows;
+  document.getElementById('resultBox').style.display='block';
+}
+document.getElementById('calcBtn').addEventListener('click',calc);
+</script>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fuel Cost Calculator — AutoGlob</title>
+<meta name="description" content="Calculate the fuel cost of any trip or your monthly driving based on distance, fuel economy and price.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Fuel Cost Calculator — AutoGlob">
+<meta property="og:description" content="Calculate the fuel cost of any trip or your monthly driving based on distance, fuel economy and price.">
+<meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+<meta property="og:url" content="https://globtechco.github.io/ttn-finans/fuel-cost-calculator.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/fuel-cost-calculator.html">
+<meta property="og:site_name" content="AutoGlob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Fuel Cost Calculator — AutoGlob">
+<meta name="twitter:description" content="Calculate the fuel cost of any trip or your monthly driving based on distance, fuel economy and price.">
+<meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#latest">News</a>
+      <a href="index.html#latest">Reviews</a>
+      <a href="index.html#latest">Test Drives</a>
+      <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container static-page">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / Fuel Cost Calculator</p>
+  <h1 class="page-title">Fuel Cost Calculator</h1>
+  <p class="tool-intro">Estimate how much a trip (or your regular monthly driving) actually costs in fuel, based on distance, your car's fuel economy, and the local price per liter or gallon.</p>
+
+  <div class="tool-layout">
+    <div class="tool-form">
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="distance">Distance</label>
+        <input type="number" id="distance" placeholder="500">
+      </div>
+      <div class="tool-field">
+        <label for="unit">Unit</label>
+        <select id="unit"><option value="km">Kilometers</option>
+<option value="mi">Miles</option></select>
+      </div>
+      </div>
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="economy">Fuel Economy</label>
+        <input type="number" id="economy" placeholder="7.5">
+      </div>
+      <div class="tool-field">
+        <label for="econUnit">Economy Unit</label>
+        <select id="econUnit"><option value="l100">L / 100km</option>
+<option value="mpg">MPG (US)</option></select>
+      </div>
+      </div>
+      <div class="tool-field">
+        <label for="price">Fuel Price (per liter/gallon)</label>
+        <input type="number" id="price" placeholder="1.65">
+      </div>
+      <button class="btn" id="calcBtn" type="button">Calculate Cost</button>
+      <p id="calcError" class="tool-error" style="display:none;"></p>
+    </div>
+
+    <div class="tool-result" id="resultBox" style="display:none;">
+      <h3>Result</h3>
+      <div class="tool-result-value" id="totalCost">—</div>
+      <p class="tool-result-label">estimated fuel cost</p>
+      <table class="tool-result-table">
+        <tr><td>Fuel needed</td><td id="fuelNeeded">—</td></tr>
+        <tr><td>Cost per 100 km/mi</td><td id="costPer100">—</td></tr>
+      </table>
+      <p class="tool-disclaimer">Actual consumption varies with driving style, terrain, load, and weather. Use manufacturer fuel economy figures as a starting estimate, not a guarantee.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="max-width:none;">
+    <h2>Why your real mileage varies</h2>
+    <p>Official fuel economy ratings are measured under standardized lab conditions. Real-world consumption is typically 10-20% higher in city driving, cold weather, or with a heavy right foot, and can be lower on steady highway cruising with good aerodynamics.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          </picture>
+        </a>
+        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Test Drives</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoGlob. All rights reserved.</span>
+      <span>Made for people who read the whole story.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>
+function calc(){
+  const dist=+document.getElementById('distance').value;
+  const unit=document.getElementById('unit').value;
+  const econ=+document.getElementById('economy').value;
+  const econUnit=document.getElementById('econUnit').value;
+  const price=+document.getElementById('price').value;
+  const err=document.getElementById('calcError');
+  if(!dist||!econ||!price){ err.textContent='Please fill in all fields.'; err.style.display='block'; return; }
+  err.style.display='none';
+  const distKm = unit==='mi' ? dist*1.60934 : dist;
+  let l100;
+  if(econUnit==='mpg'){ l100 = 235.215/econ; } else { l100 = econ; }
+  const fuelUnits = (l100/100)*distKm;
+  const cost = fuelUnits*price;
+  document.getElementById('totalCost').innerHTML='$'+cost.toFixed(2);
+  document.getElementById('fuelNeeded').textContent=fuelUnits.toFixed(1)+' liters';
+  document.getElementById('costPer100').textContent='$'+(l100*price).toFixed(2);
+  document.getElementById('resultBox').style.display='block';
+}
+document.getElementById('calcBtn').addEventListener('click',calc);
+</script>
+</body>
+</html>

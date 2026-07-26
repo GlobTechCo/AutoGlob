@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CO₂ Emissions Calculator — AutoGlob</title>
+<meta name="description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="CO₂ Emissions Calculator — AutoGlob">
+<meta property="og:description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
+<meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+<meta property="og:url" content="https://globtechco.github.io/ttn-finans/co2-calculator.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/co2-calculator.html">
+<meta property="og:site_name" content="AutoGlob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="CO₂ Emissions Calculator — AutoGlob">
+<meta name="twitter:description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
+<meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#latest">News</a>
+      <a href="index.html#latest">Reviews</a>
+      <a href="index.html#latest">Test Drives</a>
+      <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container static-page">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / CO₂ Emissions Calculator</p>
+  <h1 class="page-title">CO₂ Emissions Calculator</h1>
+  <p class="tool-intro">Estimate the annual CO₂ output of your car based on how much you drive, your fuel type, and your car's fuel economy.</p>
+
+  <div class="tool-layout">
+    <div class="tool-form">
+      <div class="tool-row">
+      <div class="tool-field">
+        <label for="miles">Annual Distance (km)</label>
+        <input type="number" id="miles" placeholder="15000">
+      </div>
+      <div class="tool-field">
+        <label for="fuelType">Fuel Type</label>
+        <select id="fuelType"><option value="gasoline">Gasoline</option>
+<option value="diesel">Diesel</option>
+<option value="hybrid">Hybrid (gasoline)</option></select>
+      </div>
+      </div>
+      <div class="tool-field">
+        <label for="econ2">Fuel Economy (L/100km)</label>
+        <input type="number" id="econ2" placeholder="7.5">
+      </div>
+      <button class="btn" id="calcBtn" type="button">Calculate Emissions</button>
+      <p id="calcError" class="tool-error" style="display:none;"></p>
+    </div>
+
+    <div class="tool-result" id="resultBox" style="display:none;">
+      <h3>Result</h3>
+      <div class="tool-result-value" id="co2Val">—</div>
+      <p class="tool-result-label">estimated CO₂ per year</p>
+      <table class="tool-result-table">
+        <tr><td>Fuel used per year</td><td id="fuelUsedYear">—</td></tr>
+        <tr><td>CO₂ per km</td><td id="co2PerKm">—</td></tr>
+      </table>
+      <p class="tool-disclaimer">Based on standard emission factors: ~2.31 kg CO2/liter for gasoline, ~2.68 kg CO2/liter for diesel. Actual emissions vary with driving conditions and fuel blend. This doesn't include upstream production emissions.</p>
+    </div>
+  </div>
+
+  <div class="prose" style="max-width:none;">
+    <h2>How fuel converts to CO₂</h2>
+    <p>Burning one liter of gasoline produces about 2.31 kg of CO₂; diesel produces slightly more per liter (about 2.68 kg) because it's denser and contains more carbon per liter, despite diesel engines often being more fuel-efficient overall.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          </picture>
+        </a>
+        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Test Drives</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoGlob. All rights reserved.</span>
+      <span>Made for people who read the whole story.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>
+function calc(){
+  const km=+document.getElementById('miles').value;
+  const fuelType=document.getElementById('fuelType').value;
+  const econ=+document.getElementById('econ2').value;
+  const err=document.getElementById('calcError');
+  if(!km||!econ){ err.textContent='Please fill in both fields.'; err.style.display='block'; return; }
+  err.style.display='none';
+  const factor = fuelType==='diesel' ? 2.68 : 2.31;
+  const fuelUsed = (econ/100)*km;
+  const co2kg = fuelUsed*factor;
+  document.getElementById('co2Val').innerHTML=(co2kg/1000).toFixed(2)+'<span> t</span>';
+  document.getElementById('fuelUsedYear').textContent=fuelUsed.toFixed(0)+' liters';
+  document.getElementById('co2PerKm').textContent=(co2kg/km*1000).toFixed(0)+' g/km';
+  document.getElementById('resultBox').style.display='block';
+}
+document.getElementById('calcBtn').addEventListener('click',calc);
+</script>
+</body>
+</html>

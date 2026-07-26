@@ -10,13 +10,17 @@
 <meta property="og:description" content="Before touchscreens, designers treated the dash like a piece of furniture.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1200&q=80">
 <meta property="og:url" content="https://globtechco.github.io/ttn-finans/1960s-dashboards-design.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/1960s-dashboards-design.html">
 <meta property="og:site_name" content="AutoGlob">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="The Instrument Panel as Art: A Study of 1960s Dashboards — AutoGlob">
 <meta name="twitter:description" content="Before touchscreens, designers treated the dash like a piece of furniture.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1200&q=80">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
 <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
@@ -24,13 +28,17 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html#latest">News</a>
       <a href="index.html#latest">Reviews</a>
       <a href="index.html#latest">Test Drives</a>
       <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html">Tools</a>
       <a href="about.html">About Us</a>
     </nav>
     <div class="header-actions">
@@ -55,7 +63,7 @@
       <span>4 min read</span>
     </div>
     <div class="article-hero-media">
-      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80" alt="Detail of a classic car dashboard with analog gauges">
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1600&q=80" alt="Detail of a classic car dashboard with analog gauges" loading="lazy">
     </div>
   </div>
 </section>
@@ -65,7 +73,7 @@
     <p>Open the door of almost any well-preserved car from the 1960s and the first thing you notice isn't the seats or the wheel — it's the dashboard, laid out less like a control panel and more like a piece of case furniture, with real wood veneer, chrome bezels, and gauges positioned for legibility rather than data density.</p>
 
     <figure>
-      <img src="https://images.unsplash.com/photo-1633586020715-0b462f444ed3?w=1400&q=80" alt="Real wood and stitched leather were standard, not optional, in this era.">
+      <img src="https://images.unsplash.com/photo-1633586020715-0b462f444ed3?w=1400&q=80" alt="Real wood and stitched leather were standard, not optional, in this era." loading="lazy">
       <figcaption>Real wood and stitched leather were standard, not optional, in this era.</figcaption>
     </figure>
 
@@ -79,7 +87,7 @@
 
     <p>Modern dashboards are unambiguously safer and more functional, packing navigation, climate, and diagnostics into a single screen. But something about the tactile specificity of a manual dial, or a switch you could feel click into place without looking, hasn't been fully replaced — which is part of why restored 1960s interiors still draw such a strong reaction from people who've never known anything but a touchscreen.</p>
     <figure>
-      <img src="https://images.unsplash.com/photo-1760161339261-56487b766a17?w=1400&q=80" alt="Later interiors moved toward more integrated, less ornamental layouts.">
+      <img src="https://images.unsplash.com/photo-1760161339261-56487b766a17?w=1400&q=80" alt="Later interiors moved toward more integrated, less ornamental layouts." loading="lazy">
       <figcaption>Later interiors moved toward more integrated, less ornamental layouts.</figcaption>
     </figure>
 
@@ -129,7 +137,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
       </div>
@@ -164,6 +175,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

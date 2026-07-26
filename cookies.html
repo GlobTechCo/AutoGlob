@@ -10,13 +10,17 @@
 <meta property="og:description" content="How AutoGlob uses cookies and similar technologies.">
 <meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
 <meta property="og:url" content="https://globtechco.github.io/ttn-finans/cookies.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/cookies.html">
 <meta property="og:site_name" content="AutoGlob">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Cookie Policy — AutoGlob">
 <meta name="twitter:description" content="How AutoGlob uses cookies and similar technologies.">
 <meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
 <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
@@ -24,13 +28,17 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html#latest">News</a>
       <a href="index.html#latest">Reviews</a>
       <a href="index.html#latest">Test Drives</a>
       <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html">Tools</a>
       <a href="about.html">About Us</a>
     </nav>
     <div class="header-actions">
@@ -79,7 +87,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
       </div>
@@ -114,6 +125,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

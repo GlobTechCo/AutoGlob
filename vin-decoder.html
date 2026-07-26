@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free VIN Decoder — AutoGlob</title>
+<meta name="description" content="Decode any 17-character VIN for free: make, model, year, engine, plant and more. Powered by the US NHTSA vehicle database.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Free VIN Decoder — AutoGlob">
+<meta property="og:description" content="Decode any 17-character VIN for free: make, model, year, engine, plant and more. Powered by the US NHTSA vehicle database.">
+<meta property="og:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+<meta property="og:url" content="https://globtechco.github.io/ttn-finans/vin-decoder.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/vin-decoder.html">
+<meta property="og:site_name" content="AutoGlob">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Free VIN Decoder — AutoGlob">
+<meta name="twitter:description" content="Decode any 17-character VIN for free: make, model, year, engine, plant and more.">
+<meta name="twitter:image" content="https://globtechco.github.io/ttn-finans/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://vpic.nhtsa.dot.gov">
+<link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
+<link rel="stylesheet" href="styles.css?v=7">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
+    </a>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html#latest">News</a>
+      <a href="index.html#latest">Reviews</a>
+      <a href="index.html#latest">Test Drives</a>
+      <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html" class="active">Tools</a>
+      <a href="about.html">About Us</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="container static-page">
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / VIN Decoder</p>
+  <h1 class="page-title">Free VIN Decoder</h1>
+  <p class="tool-intro">Enter any 17-character Vehicle Identification Number to see its make, model, year, engine, body style and manufacturing plant. Data comes directly from the US National Highway Traffic Safety Administration (NHTSA) vPIC database — free, no sign-up, no API key.</p>
+
+  <div class="tool-layout">
+    <div class="tool-form">
+      <div class="tool-field">
+        <label for="vinInput">VIN (17 characters)</label>
+        <input type="text" id="vinInput" maxlength="17" placeholder="e.g. 1HGCM82633A004352" autocapitalize="characters" autocomplete="off">
+      </div>
+      <button class="btn" id="decodeBtn" type="button">Decode VIN</button>
+      <p id="vinError" class="tool-error" style="display:none;"></p>
+      <p id="vinLoading" class="tool-loading" style="display:none;">Looking up VIN...</p>
+    </div>
+
+    <div class="tool-result" id="vinResultBox" style="display:none;">
+      <h3>Vehicle Details</h3>
+      <div class="vin-result-grid" id="vinResultGrid"></div>
+    </div>
+  </div>
+
+  <div class="prose" style="max-width:none;">
+    <h2>How VIN decoding works</h2>
+    <p>Every vehicle sold since 1981 has a unique 17-character VIN, usually found on the dashboard (visible through the windshield), the driver's side door jamb, or the vehicle's registration and insurance documents. The first character indicates the country of manufacture, characters 2-3 the manufacturer, and characters 4-8 encode the vehicle's brand, engine and body type. The 10th character encodes the model year.</p>
+    <p>This tool queries the NHTSA's public vPIC (Vehicle Product Information Catalog) API directly from your browser — no data is sent to or stored on AutoGlob's servers.</p>
+  </div>
+</div>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <picture>
+            <source srcset="logo.webp" type="image/webp">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          </picture>
+        </a>
+        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="tools.html">Tools</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Reviews</a></li>
+          <li><a href="#">Test Drives</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="cookies.html">Cookie Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 AutoGlob. All rights reserved.</span>
+      <span>Made for people who read the whole story.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script>
+document.getElementById('decodeBtn').addEventListener('click', async function(){
+  const vin = document.getElementById('vinInput').value.trim().toUpperCase();
+  const errorEl = document.getElementById('vinError');
+  const loadingEl = document.getElementById('vinLoading');
+  const resultBox = document.getElementById('vinResultBox');
+  const resultGrid = document.getElementById('vinResultGrid');
+
+  errorEl.style.display = 'none';
+  resultBox.style.display = 'none';
+
+  if (vin.length !== 17) {
+    errorEl.textContent = 'A VIN must be exactly 17 characters.';
+    errorEl.style.display = 'block';
+    return;
+  }
+
+  loadingEl.style.display = 'block';
+  try {
+    const res = await fetch(`https://vpic.nhtsa.dot.gov/api/vehicles/decodevin/${encodeURIComponent(vin)}?format=json`);
+    if (!res.ok) throw new Error('Network error');
+    const data = await res.json();
+    const results = data.Results || [];
+
+    const wanted = ['Make', 'Model', 'Model Year', 'Body Class', 'Vehicle Type', 'Engine Number of Cylinders',
+                     'Displacement (L)', 'Fuel Type - Primary', 'Drive Type', 'Transmission Style',
+                     'Plant Country', 'Plant City', 'Manufacturer Name', 'Trim'];
+
+    const map = {};
+    results.forEach(r => { if (r.Value && r.Value !== 'Not Applicable') map[r.Variable] = r.Value; });
+
+    if (!map['Make']) {
+      loadingEl.style.display = 'none';
+      errorEl.textContent = "Couldn't decode this VIN. Double-check the characters and try again.";
+      errorEl.style.display = 'block';
+      return;
+    }
+
+    resultGrid.innerHTML = wanted
+      .filter(k => map[k])
+      .map(k => `<div class="vin-result-item"><div class="k">${k}</div><div class="v">${map[k]}</div></div>`)
+      .join('');
+
+    loadingEl.style.display = 'none';
+    resultBox.style.display = 'block';
+  } catch (e) {
+    loadingEl.style.display = 'none';
+    errorEl.textContent = 'Could not reach the VIN database. Check your connection and try again.';
+    errorEl.style.display = 'block';
+  }
+});
+
+document.getElementById('vinInput').addEventListener('keydown', function(e){
+  if (e.key === 'Enter') document.getElementById('decodeBtn').click();
+});
+</script>
+</body>
+</html>

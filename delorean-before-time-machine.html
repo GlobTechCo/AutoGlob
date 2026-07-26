@@ -10,13 +10,17 @@
 <meta property="og:description" content="Long before pop culture, there was a factory in Belfast and a very risky bet.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=1200&q=80">
 <meta property="og:url" content="https://globtechco.github.io/ttn-finans/delorean-before-time-machine.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/delorean-before-time-machine.html">
 <meta property="og:site_name" content="AutoGlob">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="DeLorean Before the Time Machine: The Company That Almost Wasn't — AutoGlob">
 <meta name="twitter:description" content="Long before pop culture, there was a factory in Belfast and a very risky bet.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=1200&q=80">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
 <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
@@ -24,13 +28,17 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html#latest">News</a>
       <a href="index.html#latest">Reviews</a>
       <a href="index.html#latest">Test Drives</a>
       <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html">Tools</a>
       <a href="about.html">About Us</a>
     </nav>
     <div class="header-actions">
@@ -55,7 +63,7 @@
       <span>7 min read</span>
     </div>
     <div class="article-hero-media">
-      <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=1600&q=80" alt="Classic sports car on a winding road">
+      <img src="https://images.unsplash.com/photo-1494905998402-395d579af36f?w=1600&q=80" alt="Classic sports car on a winding road" loading="lazy">
     </div>
   </div>
 </section>
@@ -65,7 +73,7 @@
     <p>Most people who know the DeLorean know it as a prop — gull-wing doors, stainless steel, a flux capacitor bolted where an engine bay should be. Almost none of them know it was built in Belfast, funded partly by the British government as a jobs program during the height of political violence in Northern Ireland, or that its founder was on trial for cocaine trafficking within two years of the factory opening.</p>
 
     <figure>
-      <img src="https://images.unsplash.com/photo-1560024253-0a0dd047818e?w=1400&q=80" alt="The mid-mounted engine bay that powered the production DeLorean.">
+      <img src="https://images.unsplash.com/photo-1560024253-0a0dd047818e?w=1400&q=80" alt="The mid-mounted engine bay that powered the production DeLorean." loading="lazy">
       <figcaption>The mid-mounted engine bay that powered the production DeLorean.</figcaption>
     </figure>
 
@@ -79,7 +87,7 @@
 
     <p>Around 9,000 cars were built before the factory closed for good. Most of what people know about the DeLorean today comes from a movie made after the company had already failed — which means the car's real story, as a genuine and reckless act of industrial ambition, rarely gets told at all.</p>
     <figure>
-      <img src="https://images.unsplash.com/photo-1748621249703-a6abe94bae9c?w=1400&q=80" alt="Wheel and brake detail from a surviving example.">
+      <img src="https://images.unsplash.com/photo-1748621249703-a6abe94bae9c?w=1400&q=80" alt="Wheel and brake detail from a surviving example." loading="lazy">
       <figcaption>Wheel and brake detail from a surviving example.</figcaption>
     </figure>
 
@@ -129,7 +137,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
       </div>
@@ -164,6 +175,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>

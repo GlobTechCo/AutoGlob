@@ -10,13 +10,17 @@
 <meta property="og:description" content="Four years, one workshop, and a devotion to getting every rivet right.">
 <meta property="og:image" content="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80">
 <meta property="og:url" content="https://globtechco.github.io/ttn-finans/duesenberg-1934-restoration.html">
+<link rel="canonical" href="https://globtechco.github.io/ttn-finans/duesenberg-1934-restoration.html">
 <meta property="og:site_name" content="AutoGlob">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Inside the Restoration of a 1934 Duesenberg — AutoGlob">
 <meta name="twitter:description" content="Four years, one workshop, and a devotion to getting every rivet right.">
 <meta name="twitter:image" content="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1200&q=80">
 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
+<link rel="preload" href="styles.css?v=7" as="style">
 <link rel="stylesheet" href="styles.css?v=7">
 </head>
 <body>
@@ -24,13 +28,17 @@
 <header class="site-header">
   <div class="container header-inner">
     <a href="index.html" class="brand">
-      <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
     </a>
     <nav class="main-nav" id="mainNav">
       <a href="index.html#latest">News</a>
       <a href="index.html#latest">Reviews</a>
       <a href="index.html#latest">Test Drives</a>
       <a href="index.html#latest">Tips &amp; Guides</a>
+      <a href="tools.html">Tools</a>
       <a href="about.html">About Us</a>
     </nav>
     <div class="header-actions">
@@ -55,7 +63,7 @@
       <span>6 min read</span>
     </div>
     <div class="article-hero-media">
-      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=80" alt="Vintage 1930s classic car being restored">
+      <img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d?w=1600&q=80" alt="Vintage 1930s classic car being restored" loading="lazy">
     </div>
   </div>
 </section>
@@ -65,7 +73,7 @@
     <p>The car arrived at the workshop in pieces — literally. What had once been a Duesenberg Model J sat in a shipping container as a chassis, a stack of body panels, and three boxes of hardware nobody had bothered to label. The restoration that followed took four years and, by the shop's own estimate, somewhere north of six thousand hours.</p>
 
     <figure>
-      <img src="https://images.unsplash.com/photo-1633586020715-0b462f444ed3?w=1400&q=80" alt="The restored cockpit, rebuilt to period-correct specification.">
+      <img src="https://images.unsplash.com/photo-1633586020715-0b462f444ed3?w=1400&q=80" alt="The restored cockpit, rebuilt to period-correct specification." loading="lazy">
       <figcaption>The restored cockpit, rebuilt to period-correct specification.</figcaption>
     </figure>
 
@@ -81,7 +89,7 @@
 
     <p>That distinction matters enormously to collectors. A car restored to run well and a car restored to be correct are two different projects, and the second one is far more expensive, far slower, and — to the people who buy these cars — the only version worth doing.</p>
     <figure>
-      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1400&q=80" alt="Original instrumentation, reconditioned rather than replaced.">
+      <img src="https://images.unsplash.com/photo-1542362567-b07e54358753?w=1400&q=80" alt="Original instrumentation, reconditioned rather than replaced." loading="lazy">
       <figcaption>Original instrumentation, reconditioned rather than replaced.</figcaption>
     </figure>
 
@@ -131,7 +139,10 @@
     <div class="footer-grid">
       <div class="footer-brand">
         <a href="index.html" class="brand">
-          <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+          <picture>
+        <source srcset="logo.webp" type="image/webp">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+      </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
       </div>
@@ -166,6 +177,6 @@
   </div>
 </footer>
 
-<script src="script.js"></script>
+<script src="script.js" defer></script>
 </body>
 </html>
