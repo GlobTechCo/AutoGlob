@@ -88,7 +88,9 @@
       <table class="tool-result-table">
         <tr><td>Loan amount</td><td id="loanAmt">—</td></tr>
         <tr><td>Total interest paid</td><td id="totalInt">—</td></tr>
-        <tr><td>Total amount paid</td><td id="totalPaid">—</td></tr>
+        <tr><td>Total paid on the loan (principal + interest)</td><td id="totalPaid">—</td></tr>
+        <tr><td>Down payment (paid upfront)</td><td id="downPaidRow">—</td></tr>
+        <tr><td><strong>True total cost of the car</strong></td><td id="trueTotalCost">—</td></tr>
       </table>
       <p class="tool-disclaimer">This is a simplified estimate using a standard amortization formula. Actual loan offers depend on your credit score, lender fees, taxes, and regional regulations — always get a real quote before signing.</p>
     </div>
@@ -162,6 +164,8 @@ function calc(){
   document.getElementById('loanAmt').textContent='$'+P.toFixed(2);
   document.getElementById('totalInt').textContent='$'+totalInt.toFixed(2);
   document.getElementById('totalPaid').textContent='$'+totalPaid.toFixed(2);
+  document.getElementById('downPaidRow').textContent='$'+down.toFixed(2);
+  document.getElementById('trueTotalCost').innerHTML='<strong>$'+(totalPaid+down).toFixed(2)+'</strong>';
   document.getElementById('resultBox').style.display='block';
 }
 document.getElementById('calcBtn').addEventListener('click',calc);
