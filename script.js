@@ -1,6 +1,7 @@
 // AutoGlob — shared site script
 
 var ARTICLES = [
+  { title: "2026 Honda CR-V: Gas vs Hybrid", url: "honda-crv-first-test.html", keywords: "honda crv hybrid test drive review suv" },
   { title: "The Electric C-Class Doesn't Look Like an EQ, and That's the Point", url: "mercedes-c-class-ev.html", keywords: "mercedes c-class ev electric c400 4matic" },
   { title: "The BMW 330i Doesn't Need an M Badge to Be Good", url: "bmw-330i-review.html", keywords: "bmw 330i g20 3 series test drive review" },
   { title: "The Chiron Era Is Over. Its Hybrid V16 Successor Doesn't Share a Single Part With It.", url: "bugatti-chiron.html", keywords: "bugatti chiron tourbillon hypercar w16 v16" },
