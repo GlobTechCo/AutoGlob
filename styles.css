@@ -275,3 +275,27 @@ body:has(.article-header)::before{content:"";position:fixed;top:0;left:0;right:0
 .article-footer{margin-bottom:50px}
 .article-footer .tag{transition:all .18s}
 @media(max-width:960px){.article-body-layout>.sidebar{position:static}.article-body-layout{gap:34px}}
+
+
+/* Final site-wide editorial system */
+:root{--content-max:1240px}
+.container{width:min(var(--content-max),calc(100% - 48px));margin-inline:auto}
+.site-header{backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.site-header .container{min-height:72px}
+.main-nav a{position:relative}
+.main-nav a::after{content:"";position:absolute;left:0;right:0;bottom:-9px;height:2px;background:var(--red);transform:scaleX(0);transform-origin:center;transition:transform .18s ease}
+.main-nav a:hover::after,.main-nav a.active::after{transform:scaleX(1)}
+.static-page{max-width:var(--content-max)}
+.static-page>.updated{display:inline-flex;align-items:center;gap:8px}
+.static-page>.updated::before{content:"";width:22px;height:2px;background:var(--red)}
+.page-intro{max-width:760px;color:var(--muted);font-size:16px;line-height:1.65;margin:0 0 34px}
+.category-strip{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 30px}
+.category-strip a{font-size:10px;letter-spacing:1px;text-transform:uppercase;border:1px solid var(--line);padding:8px 11px;border-radius:2px;color:var(--muted);transition:.18s}
+.category-strip a:hover,.category-strip a.active{border-color:var(--red);color:#fff;background:rgba(230,59,50,.08)}
+.section-rule{height:1px;background:var(--line);margin:42px 0}
+.empty-note{padding:30px;border:1px dashed var(--line);color:var(--muted);text-align:center}
+.tools-grid .card,.tool-card{transition:transform .18s ease,border-color .18s ease}
+.tools-grid .card:hover,.tool-card:hover{transform:translateY(-3px);border-color:rgba(230,59,50,.45)}
+.reading-progress{position:fixed;top:0;left:0;width:100%;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;z-index:9999;pointer-events:none}
+.ad-slot{overflow:hidden}
+@media(max-width:760px){.container{width:min(100% - 30px,var(--content-max))}.site-header .container{min-height:64px}.main-nav a::after{display:none}}
