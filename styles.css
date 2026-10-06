@@ -203,3 +203,53 @@ button,input,select{font:inherit}
  .article-header h1{font-size:45px}
  .widget{padding:18px}
 }
+
+/* AutoGlob editorial refinement — desktop-first pass */
+.page-layout{grid-template-columns:minmax(0,1fr) 300px;gap:42px;padding-top:52px;padding-bottom:72px}
+.article-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.article-grid.featured-first .card:first-child{grid-column:1 / -1;grid-row:auto;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.65fr);min-height:340px}
+.article-grid.featured-first .card:first-child .card-media{height:100%;aspect-ratio:auto;min-height:340px}
+.article-grid.featured-first .card:first-child .card-body{padding:30px 30px 28px;justify-content:center}
+.article-grid.featured-first .card:first-child h3{font-size:clamp(32px,3.2vw,48px);line-height:.94;max-width:13ch}
+.article-grid.featured-first .card:first-child p{font-size:14px;max-width:48ch}
+.card-body{padding:16px 18px 17px;gap:7px}
+.card h3{font-size:21px}
+.card p{font-size:12.5px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.card-date{font-size:9px;margin-top:1px}
+.read-more{font-size:9px;padding-top:3px}
+.card:hover{transform:translateY(-2px)}
+.sidebar{gap:16px}
+.widget{padding:19px}
+.widget h3{font-size:20px;margin-bottom:12px}
+.widget-list li a{padding:11px 0;font-size:12px}
+.ad-slot{padding:12px;min-height:0}
+.ad-slot-sidebar{min-height:250px;display:flex;flex-direction:column;justify-content:flex-start}
+.ad-slot .ad-placeholder{min-height:198px;display:flex;align-items:center;justify-content:center;color:var(--faint);font-size:9px;letter-spacing:1.5px;text-transform:uppercase;border:1px solid rgba(255,255,255,.04);background:rgba(255,255,255,.015)}
+.section-heading{margin-bottom:20px}
+.hero{min-height:510px}
+
+@media(max-width:1100px){
+ .page-layout{grid-template-columns:minmax(0,1fr) 280px;gap:30px}
+ .article-grid.featured-first .card:first-child{grid-template-columns:1.2fr .8fr}
+ .article-grid.featured-first .card:first-child h3{font-size:34px}
+}
+@media(max-width:960px){
+ .page-layout,.article-body-layout{grid-template-columns:1fr}
+ .article-grid.featured-first .card:first-child{grid-column:span 2;grid-row:auto}
+ .sidebar{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+ .ad-slot-sidebar{min-height:250px}
+}
+@media(max-width:720px){
+ .page-layout{padding-top:38px;padding-bottom:56px}
+ .article-grid,.article-grid.featured-first{grid-template-columns:1fr}
+ .article-grid.featured-first .card:first-child{grid-column:span 1;display:flex;min-height:0}
+ .article-grid.featured-first .card:first-child .card-media{min-height:0;aspect-ratio:16/10}
+ .article-grid.featured-first .card:first-child .card-body{padding:18px}
+ .article-grid.featured-first .card:first-child h3{font-size:28px;max-width:none}
+ .sidebar{grid-template-columns:1fr}
+ .hero{min-height:480px}
+}
+@media(max-width:480px){
+ .hero{min-height:450px}
+ .hero-inner{padding-bottom:40px}
+}
