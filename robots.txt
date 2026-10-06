@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://globtechco.github.io/ttn-finans/sitemap.xml
+Sitemap: https://autoglob.co/sitemap.xml
