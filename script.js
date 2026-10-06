@@ -33,17 +33,33 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
+  // Reading progress for long-form articles
+  if (document.querySelector('.prose')) {
+    var progress = document.createElement('div');
+    progress.className = 'reading-progress';
+    progress.setAttribute('aria-hidden', 'true');
+    document.body.appendChild(progress);
+    function updateReadingProgress() {
+      var doc = document.documentElement;
+      var max = doc.scrollHeight - window.innerHeight;
+      var value = max > 0 ? Math.min(100, Math.max(0, (window.scrollY / max) * 100)) : 0;
+      progress.style.transform = 'scaleX(' + (value / 100) + ')';
+    }
+    window.addEventListener('scroll', updateReadingProgress, { passive: true });
+    updateReadingProgress();
+  }
+
   // ---- Site search (client-side, no backend) ----
   var searchBtn = document.querySelector('.search-btn');
   if (searchBtn) {
     var overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(8,22,37,0.92);' +
+    overlay.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(7,10,14,0.96);' +
       'display:none;align-items:flex-start;justify-content:center;padding:80px 20px;';
     overlay.innerHTML =
       '<div style="width:100%;max-width:560px;">' +
       '  <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;">' +
       '    <input id="siteSearchInput" type="text" placeholder="Search articles and tools..." autocomplete="off" ' +
-      '      style="flex:1;background:#0e1117;border:1px solid rgba(245,247,250,0.15);color:#f5f7fa;padding:12px 14px;border-radius:2px;font-family:Montserrat,sans-serif;font-size:15px;">' +
+      '      style="flex:1;background:#0e1117;border:1px solid rgba(245,247,250,0.15);color:#f5f7fa;padding:12px 14px;border-radius:2px;font-family:Inter,Arial,sans-serif;font-size:15px;">' +
       '    <button id="siteSearchClose" aria-label="Close search" style="background:none;border:none;color:#f5f7fa;font-size:22px;cursor:pointer;padding:4px 10px;">&times;</button>' +
       '  </div>' +
       '  <div id="siteSearchResults" style="display:flex;flex-direction:column;gap:2px;"></div>' +
@@ -113,10 +129,10 @@ document.addEventListener('DOMContentLoaded', function () {
       'max-width:920px;margin:0 auto;font-family:Montserrat,sans-serif;color:#f5f7fa;font-size:13.5px;';
     banner.innerHTML =
       '<span style="max-width:56ch;color:#64707d;">We use cookies for site functionality, analytics and advertising. See our ' +
-      '<a href="cookies.html" style="color:#12d6d0;">Cookie Policy</a>.</span>' +
+      '<a href="cookies.html" style="color:#e63b32;">Cookie Policy</a>.</span>' +
       '<span style="display:flex;gap:10px;flex-shrink:0;">' +
       '<button id="cookieDecline" style="background:none;border:1px solid rgba(245,247,250,0.15);color:#64707d;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Decline</button>' +
-      '<button id="cookieAccept" style="background:#12d6d0;border:none;color:#081625;font-weight:700;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Accept</button>' +
+      '<button id="cookieAccept" style="background:#12d6d0;border:none;color:#ffffff;font-weight:700;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Accept</button>' +
       '</span>';
     document.body.appendChild(banner);
 
