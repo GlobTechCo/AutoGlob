@@ -1,6 +1,13 @@
 // AutoGlob — shared site script
 
 var ARTICLES = [
+  { title: "Naturally Aspirated, By Choice: The Holdouts Building V12s in 2026", url: "naturally-aspirated-v12-holdouts.html", keywords: "naturally aspirated v12 holdouts" },
+  { title: "Why Used EV Prices Just Fell Off a Cliff", url: "used-ev-prices-fell.html", keywords: "used ev prices fell" },
+  { title: "DeLorean Before the Time Machine: The Company That Almost Wasn't", url: "delorean-before-time-machine.html", keywords: "delorean before time machine" },
+  { title: "Group B: The Rally Era That Was Too Fast to Live", url: "group-b-rally-era.html", keywords: "group b rally era" },
+  { title: "The Instrument Panel as Art: A Study of 1960s Dashboards", url: "1960s-dashboards-design.html", keywords: "1960s dashboards design" },
+  { title: "Tucker: The Car That Was Too Honest for Detroit", url: "tucker-car-too-honest-detroit.html", keywords: "tucker car too honest detroit" },
+  { title: "Inside a Classic Car Auction: What Actually Drives the Hammer Price", url: "classic-car-auction-hammer-price.html", keywords: "classic car auction hammer price" },
   { title: "2026 Honda CR-V: Gas vs Hybrid", url: "honda-crv-first-test.html", keywords: "honda crv hybrid test drive review suv" },
   { title: "The Electric C-Class Doesn't Look Like an EQ, and That's the Point", url: "mercedes-c-class-ev.html", keywords: "mercedes c-class ev electric c400 4matic" },
   { title: "The BMW 330i Doesn't Need an M Badge to Be Good", url: "bmw-330i-review.html", keywords: "bmw 330i g20 3 series test drive review" },
@@ -86,21 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
     input.addEventListener('input', function () { renderResults(input.value); });
   }
 
-  // ---- Newsletter form feedback (no backend attached — cosmetic confirmation only) ----
-  var newsletterForm = document.querySelector('.newsletter-form');
-  if (newsletterForm) {
-    newsletterForm.addEventListener('submit', function (e) {
-      e.preventDefault();
-      var emailInput = newsletterForm.querySelector('input[type="email"]');
-      var btn = newsletterForm.querySelector('button');
-      if (emailInput && emailInput.value) {
-        btn.textContent = "Thanks — you're on the list!";
-        btn.disabled = true;
-        emailInput.disabled = true;
-      }
-    });
-  }
-
+  // Remember the visitor's cookie preference.
   // Simple cookie consent banner
   var CONSENT_KEY = 'autoglob_cookie_consent';
   if (!localStorage.getItem(CONSENT_KEY)) {
@@ -112,7 +105,7 @@ document.addEventListener('DOMContentLoaded', function () {
       'display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;' +
       'max-width:920px;margin:0 auto;font-family:Montserrat,sans-serif;color:#f5f7fa;font-size:13.5px;';
     banner.innerHTML =
-      '<span style="max-width:56ch;color:#64707d;">We use cookies for site functionality, analytics and advertising. See our ' +
+      '<span style="max-width:56ch;color:#64707d;">We remember your preference on this device. See our ' +
       '<a href="cookies.html" style="color:#12d6d0;">Cookie Policy</a>.</span>' +
       '<span style="display:flex;gap:10px;flex-shrink:0;">' +
       '<button id="cookieDecline" style="background:none;border:1px solid rgba(245,247,250,0.15);color:#64707d;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Decline</button>' +
