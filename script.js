@@ -1,6 +1,11 @@
 // AutoGlob — shared site script
 
 var ARTICLES = [
+  {"title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade", "url": "bmw-ix3-m60-2027.html", "keywords": "news bmw ix3 m60 2027"},
+  {"title": "Volvo EX60 P10: Beyond the 400-Mile Headline", "url": "volvo-ex60-p10-review.html", "keywords": "reviews volvo ex60 p10 review"},
+  {"title": "Corvette Grand Sport X: What 721 HP and AWD Change", "url": "corvette-grand-sport-x-test-analysis.html", "keywords": "test drives corvette grand sport x test analysis"},
+  {"title": "The BMW 528i E39 and the Value of an Ordinary 5 Series", "url": "bmw-528i-e39-story.html", "keywords": "stories bmw 528i e39 story"},
+  {"title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs", "url": "gas-hybrid-ev-ownership-cost-guide.html", "keywords": "tools gas hybrid ev ownership cost guide"},
   { title: "Naturally Aspirated, By Choice: The Holdouts Building V12s in 2026", url: "naturally-aspirated-v12-holdouts.html", keywords: "naturally aspirated v12 holdouts" },
   { title: "Why Used EV Prices Just Fell Off a Cliff", url: "used-ev-prices-fell.html", keywords: "used ev prices fell" },
   { title: "DeLorean Before the Time Machine: The Company That Almost Wasn't", url: "delorean-before-time-machine.html", keywords: "delorean before time machine" },
@@ -123,4 +128,5 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
 
