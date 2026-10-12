@@ -1,27 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>EV Charging Cost Calculator — AutoGlob</title>
-<meta name="description" content="Calculate the real cost of charging your electric vehicle at home based on battery size and electricity rate.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="EV Charging Cost Calculator — AutoGlob">
-<meta property="og:description" content="Calculate the real cost of charging your electric vehicle at home based on battery size and electricity rate.">
-<meta property="og:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-<meta property="og:url" content="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html">
+<title>EV Charging Cost Calculator: Home Charge Cost | AutoGlob</title>
+<meta name="description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="AutoGlob">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob">
+<meta property="og:description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
+<meta property="og:url" content="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html">
+<meta property="og:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-ev-charging.webp">
+<meta property="og:image:alt" content="EV Charging Cost Calculator">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="EV Charging Cost Calculator — AutoGlob">
-<meta name="twitter:description" content="Calculate the real cost of charging your electric vehicle at home based on battery size and electricity rate.">
-<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-
+<meta name="twitter:title" content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob">
+<meta name="twitter:description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
+<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-ev-charging.webp">
+<meta name="twitter:image:alt" content="EV Charging Cost Calculator">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://globtechco.github.io/AutoGlob/#organization",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://globtechco.github.io/AutoGlob/logo.png",
+        "width": 700,
+        "height": 98
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://globtechco.github.io/AutoGlob/#website",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html#webpage",
+      "url": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html",
+      "name": "EV Charging Cost Calculator: Home Charge Cost | AutoGlob",
+      "description": "Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://globtechco.github.io/AutoGlob/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html#tool"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://globtechco.github.io/AutoGlob/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Car Tools & Calculators",
+          "item": "https://globtechco.github.io/AutoGlob/tools.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "EV Charging Cost Calculator",
+          "item": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html#tool",
+      "name": "EV Charging Cost Calculator",
+      "url": "https://globtechco.github.io/AutoGlob/ev-charging-calculator.html",
+      "description": "Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript and a modern web browser.",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-US",
+      "image": "https://globtechco.github.io/AutoGlob/assets/tools/tool-ev-charging.webp",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
-<link rel="preload" href="styles.css?v=8" as="style">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="preload" href="styles.css?v=9" as="style">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -30,7 +122,7 @@
     <a href="index.html" class="brand">
       <picture>
         <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
       </picture>
     </a>
     <nav class="main-nav" id="mainNav">
@@ -51,7 +143,7 @@
 </header>
 
 <div class="container static-page">
-  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / EV Charging Cost Calculator</p>
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / EV Charging Cost Calculator</p>
   <h1 class="page-title">EV Charging Cost Calculator</h1>
   <p class="tool-intro">Work out what a full charge actually costs based on your EV's battery capacity, your electricity price, and charger efficiency losses.</p>
 
@@ -81,7 +173,7 @@
       <p id="calcError" class="tool-error" style="display:none;"></p>
     </div>
 
-    <div class="tool-result" id="resultBox" style="display:none;">
+    <div class="tool-result" aria-live="polite" id="resultBox" style="display:none;">
       <h3>Result</h3>
       <div class="tool-result-value" id="chargeCost">—</div>
       <p class="tool-result-label">cost for this charge</p>
@@ -89,16 +181,14 @@
         <tr><td>Energy added</td><td id="energyAdded">—</td></tr>
         <tr><td>Cost per full 0-100% charge</td><td id="fullCost">—</td></tr>
       </table>
-      <p class="tool-disclaimer">Assumes roughly 10% charging losses (typical for AC home charging). DC fast charging is usually more expensive per kWh and slightly less efficient. Rates and losses vary by charger, region and utility plan.</p>
+      <p class="tool-disclaimer">Uses a fixed 90% charging-efficiency assumption. Actual energy losses and electricity charges vary. Public session, idle and parking fees are not included.</p>
     </div>
   </div>
 
-  <div class="prose" style="max-width:none;">
-    <h2>Why charging costs more than the sticker kWh number</h2>
-    <p>Charging an EV isn't 100% efficient — some energy is lost as heat during AC-to-DC conversion at the charger and battery. Home Level 2 charging typically runs at roughly 85-90% efficiency, meaning you pay for more kWh from the wall than actually end up stored in the battery.</p>
-  </div>
+  <section class="prose tool-guide"><h2>How to calculate home EV charging cost</h2><p>Enter battery capacity in kWh, the starting and target charge percentages and electricity price per kWh. The calculator uses a fixed 90% charging-efficiency assumption: energy drawn from the wall equals energy added to the battery divided by 0.90.</p><h2>EV charging example</h2><p>Charging a 75-kWh battery from 20% to 80% adds 45 kWh to the battery. At the assumed efficiency, the wall supplies 50 kWh. At $0.16 per kWh, the estimated cost is $8.00. A full 0–100% charge at the same rate is approximately $13.33.</p><h2>EV charging cost questions</h2><h3>Does it calculate charging time?</h3><p>No. The tool estimates energy and cost, not charging duration or charging speed.</p><h3>Does it include public charging fees?</h3><p>No. Session fees, per-minute charges, idle fees, parking and subscription charges are not included.</p><h3>Why is wall energy higher than battery energy?</h3><p>The model allows for losses during charging. Actual efficiency differs by vehicle, charger, temperature and charging conditions.</p></section>
 </div>
 
+<div class="container"><section class="related-tools"><h2>More free car tools</h2><ul><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="tire-size-calculator.html">Tire Size Calculator</a></li><li><a href="fuel-cost-calculator.html">Fuel Cost Calculator</a></li><li><a href="loan-calculator.html">Auto Loan Calculator</a></li><li><a href="depreciation-calculator.html">Car Depreciation Calculator</a></li><li><a href="ev-charging-calculator.html">EV Charging Cost Calculator</a></li><li><a href="co2-calculator.html">Car CO2 Emissions Calculator</a></li></ul></section></div>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -106,7 +196,7 @@
         <a href="index.html" class="brand">
           <picture>
             <source srcset="logo.webp" type="image/webp">
-            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
           </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
@@ -116,7 +206,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="tools.html">Tools</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -142,7 +232,7 @@
   </div>
 </footer>
 
-<script src="script.js?v=8" defer></script>
+<script src="script.js?v=9" defer></script>
 <script>
 function calc(){
   const battery=+document.getElementById('battery').value;
@@ -150,7 +240,8 @@ function calc(){
   const toPct=+document.getElementById('toPct').value;
   const rate=+document.getElementById('rate').value;
   const err=document.getElementById('calcError');
-  if(!battery||toPct<=fromPct||!rate){ err.textContent='Please check your inputs — "to" must be greater than "from".'; err.style.display='block'; return; }
+  document.getElementById('resultBox').style.display='none';
+  if(![battery,fromPct,toPct,rate].every(Number.isFinite)||battery<=0||fromPct<0||toPct>100||toPct<=fromPct||rate<0||document.getElementById('rate').value.trim()===''){ err.textContent='Please check your inputs — "to" must be greater than "from".'; err.style.display='block'; return; }
   err.style.display='none';
   const efficiency=0.9;
   const energyNeeded=battery*((toPct-fromPct)/100);
@@ -166,3 +257,4 @@ document.getElementById('calcBtn').addEventListener('click',calc);
 </script>
 </body>
 </html>
+

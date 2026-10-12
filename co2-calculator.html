@@ -1,27 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CO₂ Emissions Calculator — AutoGlob</title>
-<meta name="description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="CO₂ Emissions Calculator — AutoGlob">
-<meta property="og:description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
-<meta property="og:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-<meta property="og:url" content="https://globtechco.github.io/AutoGlob/co2-calculator.html">
+<title>Car CO2 Emissions Calculator: Annual Tailpipe CO2 | AutoGlob</title>
+<meta name="description" content="Estimate annual gasoline or diesel tailpipe CO2 from miles and MPG or kilometers and fuel consumption. See fuel use and emissions per mile.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://globtechco.github.io/AutoGlob/co2-calculator.html">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="AutoGlob">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Car CO2 Emissions Calculator: Annual Tailpipe CO2 | AutoGlob">
+<meta property="og:description" content="Estimate annual gasoline or diesel tailpipe CO2 from miles and MPG or kilometers and fuel consumption. See fuel use and emissions per mile.">
+<meta property="og:url" content="https://globtechco.github.io/AutoGlob/co2-calculator.html">
+<meta property="og:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-co2.webp">
+<meta property="og:image:alt" content="Car CO2 Emissions Calculator">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CO₂ Emissions Calculator — AutoGlob">
-<meta name="twitter:description" content="Estimate your car's yearly CO2 emissions based on annual mileage, fuel type and fuel economy.">
-<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-
+<meta name="twitter:title" content="Car CO2 Emissions Calculator: Annual Tailpipe CO2 | AutoGlob">
+<meta name="twitter:description" content="Estimate annual gasoline or diesel tailpipe CO2 from miles and MPG or kilometers and fuel consumption. See fuel use and emissions per mile.">
+<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-co2.webp">
+<meta name="twitter:image:alt" content="Car CO2 Emissions Calculator">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://globtechco.github.io/AutoGlob/#organization",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://globtechco.github.io/AutoGlob/logo.png",
+        "width": 700,
+        "height": 98
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://globtechco.github.io/AutoGlob/#website",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://globtechco.github.io/AutoGlob/co2-calculator.html#webpage",
+      "url": "https://globtechco.github.io/AutoGlob/co2-calculator.html",
+      "name": "Car CO2 Emissions Calculator: Annual Tailpipe CO2 | AutoGlob",
+      "description": "Estimate annual gasoline or diesel tailpipe CO2 from miles and MPG or kilometers and fuel consumption. See fuel use and emissions per mile.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://globtechco.github.io/AutoGlob/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://globtechco.github.io/AutoGlob/co2-calculator.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://globtechco.github.io/AutoGlob/co2-calculator.html#tool"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://globtechco.github.io/AutoGlob/co2-calculator.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://globtechco.github.io/AutoGlob/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Car Tools & Calculators",
+          "item": "https://globtechco.github.io/AutoGlob/tools.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Car CO2 Emissions Calculator",
+          "item": "https://globtechco.github.io/AutoGlob/co2-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://globtechco.github.io/AutoGlob/co2-calculator.html#tool",
+      "name": "Car CO2 Emissions Calculator",
+      "url": "https://globtechco.github.io/AutoGlob/co2-calculator.html",
+      "description": "Estimate annual gasoline or diesel tailpipe CO2 from miles and MPG or kilometers and fuel consumption. See fuel use and emissions per mile.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript and a modern web browser.",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-US",
+      "image": "https://globtechco.github.io/AutoGlob/assets/tools/tool-co2.webp",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
-<link rel="preload" href="styles.css?v=8" as="style">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="preload" href="styles.css?v=9" as="style">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -30,7 +122,7 @@
     <a href="index.html" class="brand">
       <picture>
         <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
       </picture>
     </a>
     <nav class="main-nav" id="mainNav">
@@ -51,15 +143,16 @@
 </header>
 
 <div class="container static-page">
-  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / CO₂ Emissions Calculator</p>
-  <h1 class="page-title">CO₂ Emissions Calculator</h1>
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / Car CO2 Emissions Calculator</p>
+  <h1 class="page-title">Car CO2 Emissions Calculator</h1>
   <p class="tool-intro">Estimate the annual CO₂ output of your car based on how much you drive, your fuel type, and your car's fuel economy.</p>
 
   <div class="tool-layout">
     <div class="tool-form">
+      <div class="tool-row"><div class="tool-field"><label for="distanceUnit">Distance Unit</label><select id="distanceUnit"><option value="mi">Miles</option><option value="km">Kilometers</option></select></div><div class="tool-field"><label for="economyUnit">Fuel Economy Unit</label><select id="economyUnit"><option value="mpg">MPG (US)</option><option value="l100">L/100 km</option></select></div></div>
       <div class="tool-row">
       <div class="tool-field">
-        <label for="miles">Annual Distance (km)</label>
+        <label for="miles">Annual Distance</label>
         <input type="number" id="miles" placeholder="15000">
       </div>
       <div class="tool-field">
@@ -70,14 +163,14 @@
       </div>
       </div>
       <div class="tool-field">
-        <label for="econ2">Fuel Economy (L/100km)</label>
+        <label for="econ2">Fuel Economy</label>
         <input type="number" id="econ2" placeholder="7.5">
       </div>
       <button class="btn" id="calcBtn" type="button">Calculate Emissions</button>
       <p id="calcError" class="tool-error" style="display:none;"></p>
     </div>
 
-    <div class="tool-result" id="resultBox" style="display:none;">
+    <div class="tool-result" aria-live="polite" id="resultBox" style="display:none;">
       <h3>Result</h3>
       <div class="tool-result-value" id="co2Val">—</div>
       <p class="tool-result-label">estimated CO₂ per year</p>
@@ -85,16 +178,14 @@
         <tr><td>Fuel used per year</td><td id="fuelUsedYear">—</td></tr>
         <tr><td>CO₂ per km</td><td id="co2PerKm">—</td></tr>
       </table>
-      <p class="tool-disclaimer">Based on standard emission factors: ~2.31 kg CO2/liter for gasoline, ~2.68 kg CO2/liter for diesel. Actual emissions vary with driving conditions and fuel blend. This doesn't include upstream production emissions.</p>
+      <p class="tool-disclaimer">Estimates tailpipe CO2 only, using EPA factors for gasoline and diesel. It excludes upstream fuel emissions, vehicle manufacturing and other greenhouse gases.</p>
     </div>
   </div>
 
-  <div class="prose" style="max-width:none;">
-    <h2>How fuel converts to CO₂</h2>
-    <p>Burning one liter of gasoline produces about 2.31 kg of CO₂; diesel produces slightly more per liter (about 2.68 kg) because it's denser and contains more carbon per liter, despite diesel engines often being more fuel-efficient overall.</p>
-  </div>
+  <section class="prose tool-guide"><h2>How to estimate annual car CO2 emissions</h2><p>Enter annual miles with US MPG, or kilometers with liters per 100 km, and choose gasoline or diesel. The calculator estimates fuel burned and the carbon dioxide produced at the tailpipe. It does not calculate manufacturing or upstream fuel emissions.</p><h2>CO2 factors and example</h2><p>This tool uses <a href="https://www.epa.gov/greenvehicles/greenhouse-gas-emissions-typical-passenger-vehicle">EPA tailpipe factors</a> of 8.887 kg of CO2 per US gallon of gasoline and 10.180 kg per US gallon of diesel. Annual CO2 equals fuel burned multiplied by the selected fuel factor.</p><p>At 12,000 miles per year and 30 MPG, a gasoline car uses 400 US gallons. The estimate is 3,554.8 kg, or 3.55 metric tons of tailpipe CO2 per year.</p><h2>Car emissions calculator questions</h2><h3>Is this a complete carbon-footprint calculation?</h3><p>No. It covers fuel combustion at the tailpipe only and excludes vehicle manufacturing, fuel production and other greenhouse gases.</p><h3>Can I use it for a battery-electric car?</h3><p>No. Electricity-generation emissions require a different method. This calculator accepts gasoline and diesel consumption.</p><h3>What is the difference between g/mile and metric tons per year?</h3><p>Grams per mile describes emission intensity. Metric tons per year combine that intensity with the annual distance driven.</p></section>
 </div>
 
+<div class="container"><section class="related-tools"><h2>More free car tools</h2><ul><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="tire-size-calculator.html">Tire Size Calculator</a></li><li><a href="fuel-cost-calculator.html">Fuel Cost Calculator</a></li><li><a href="loan-calculator.html">Auto Loan Calculator</a></li><li><a href="depreciation-calculator.html">Car Depreciation Calculator</a></li><li><a href="ev-charging-calculator.html">EV Charging Cost Calculator</a></li><li><a href="co2-calculator.html">Car CO2 Emissions Calculator</a></li></ul></section></div>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -102,7 +193,7 @@
         <a href="index.html" class="brand">
           <picture>
             <source srcset="logo.webp" type="image/webp">
-            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
           </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
@@ -112,7 +203,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="tools.html">Tools</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -138,24 +229,30 @@
   </div>
 </footer>
 
-<script src="script.js?v=8" defer></script>
+<script src="script.js?v=9" defer></script>
 <script>
 function calc(){
-  const km=+document.getElementById('miles').value;
+  const distance=+document.getElementById('miles').value;
   const fuelType=document.getElementById('fuelType').value;
   const econ=+document.getElementById('econ2').value;
+  const distanceUnit=document.getElementById('distanceUnit').value;
+  const economyUnit=document.getElementById('economyUnit').value;
   const err=document.getElementById('calcError');
-  if(!km||!econ){ err.textContent='Please fill in both fields.'; err.style.display='block'; return; }
+  document.getElementById('resultBox').style.display='none';
+  if(![distance,econ].every(v=>Number.isFinite(v)&&v>0)){err.textContent='Enter a positive annual distance and fuel economy.';err.style.display='block';return;}
   err.style.display='none';
-  const factor = fuelType==='diesel' ? 2.68 : 2.31;
-  const fuelUsed = (econ/100)*km;
-  const co2kg = fuelUsed*factor;
+  const miles=distanceUnit==='mi'?distance:distance/1.609344;
+  const km=distanceUnit==='km'?distance:distance*1.609344;
+  const gallons=economyUnit==='mpg'?miles/econ:(km*econ/100)/3.785411784;
+  const factor=fuelType==='diesel'?10.180:8.887;
+  const co2kg=gallons*factor;
   document.getElementById('co2Val').innerHTML=(co2kg/1000).toFixed(2)+'<span> t</span>';
-  document.getElementById('fuelUsedYear').textContent=fuelUsed.toFixed(0)+' liters';
-  document.getElementById('co2PerKm').textContent=(co2kg/km*1000).toFixed(0)+' g/km';
+  document.getElementById('fuelUsedYear').textContent=economyUnit==='mpg'?gallons.toFixed(1)+' US gallons':(gallons*3.785411784).toFixed(1)+' liters';
+  document.getElementById('co2PerKm').textContent=(co2kg/distance*1000).toFixed(0)+' g/'+(distanceUnit==='mi'?'mile':'km');
   document.getElementById('resultBox').style.display='block';
 }
 document.getElementById('calcBtn').addEventListener('click',calc);
 </script>
 </body>
 </html>
+

@@ -14,8 +14,8 @@
   --white: #f5f7fa;
   --gray: #64707d;
   --text: #f5f7fa;
-  --text-muted: #64707d;
-  --text-faint: rgba(100,112,125,0.7);
+  --text-muted: #9ba8b7;
+  --text-faint: #8998a8;
   --line: rgba(245,247,250,0.1);
   --line-soft: rgba(245,247,250,0.06);
 
@@ -885,3 +885,16 @@ a{ color: inherit; text-decoration: none; }
 .prose figure picture { display: block; }
 .byline { flex-wrap: wrap; }
 .icon-btn:focus-visible, .nav-toggle:focus-visible { outline: 2px solid var(--cyan); outline-offset: 2px; }
+
+
+/* Searchable tool guides and navigation. */
+.tool-guide { max-width: 78ch; }
+.tool-guide h3 { font-size: 19px; margin-top: 24px; }
+.tool-guide a { color: var(--cyan); text-decoration: underline; text-underline-offset: 3px; }
+.related-tools { padding: 24px 0 48px; border-top: 1px solid var(--line); }
+.related-tools h2 { font-size: 22px; }
+.related-tools ul, .tool-link-grid { padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 12px; }
+.related-tools li a, .tool-link-grid li a { display: block; padding: 14px; border: 1px solid var(--line); color: var(--cyan); height: 100%; }
+.home-tools { padding-bottom: 64px; }
+.home-tools > p { color: var(--text-muted); }
+@media (max-width: 720px) { .related-tools ul, .tool-link-grid { grid-template-columns: 1fr; } .tool-row { flex-wrap: wrap; } .tool-row .tool-field { min-width: 100px; } }

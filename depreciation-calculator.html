@@ -1,27 +1,119 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Car Depreciation Calculator — AutoGlob</title>
-<meta name="description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Car Depreciation Calculator — AutoGlob">
-<meta property="og:description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
-<meta property="og:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-<meta property="og:url" content="https://globtechco.github.io/AutoGlob/depreciation-calculator.html">
+<title>Car Depreciation Calculator: Future Value | AutoGlob</title>
+<meta name="description" content="Estimate future car value and yearly depreciation over 1 to 15 years. See the assumptions behind this free resale-value projection.">
+<meta name="robots" content="index,follow,max-image-preview:large">
 <link rel="canonical" href="https://globtechco.github.io/AutoGlob/depreciation-calculator.html">
+<meta property="og:type" content="website">
 <meta property="og:site_name" content="AutoGlob">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Car Depreciation Calculator: Future Value | AutoGlob">
+<meta property="og:description" content="Estimate future car value and yearly depreciation over 1 to 15 years. See the assumptions behind this free resale-value projection.">
+<meta property="og:url" content="https://globtechco.github.io/AutoGlob/depreciation-calculator.html">
+<meta property="og:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-depreciation.webp">
+<meta property="og:image:alt" content="Car Depreciation Calculator">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Car Depreciation Calculator — AutoGlob">
-<meta name="twitter:description" content="Estimate a car's resale value over the coming years using standard depreciation curves.">
-<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/logo.png">
-
+<meta name="twitter:title" content="Car Depreciation Calculator: Future Value | AutoGlob">
+<meta name="twitter:description" content="Estimate future car value and yearly depreciation over 1 to 15 years. See the assumptions behind this free resale-value projection.">
+<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/assets/tools/tool-depreciation.webp">
+<meta name="twitter:image:alt" content="Car Depreciation Calculator">
+<script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://globtechco.github.io/AutoGlob/#organization",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://globtechco.github.io/AutoGlob/logo.png",
+        "width": 700,
+        "height": 98
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://globtechco.github.io/AutoGlob/#website",
+      "name": "AutoGlob",
+      "url": "https://globtechco.github.io/AutoGlob/",
+      "inLanguage": "en-US",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      }
+    },
+    {
+      "@type": "WebPage",
+      "@id": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html#webpage",
+      "url": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html",
+      "name": "Car Depreciation Calculator: Future Value | AutoGlob",
+      "description": "Estimate future car value and yearly depreciation over 1 to 15 years. See the assumptions behind this free resale-value projection.",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@id": "https://globtechco.github.io/AutoGlob/#website"
+      },
+      "breadcrumb": {
+        "@id": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html#tool"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://globtechco.github.io/AutoGlob/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Car Tools & Calculators",
+          "item": "https://globtechco.github.io/AutoGlob/tools.html"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Car Depreciation Calculator",
+          "item": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html"
+        }
+      ]
+    },
+    {
+      "@type": "WebApplication",
+      "@id": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html#tool",
+      "name": "Car Depreciation Calculator",
+      "url": "https://globtechco.github.io/AutoGlob/depreciation-calculator.html",
+      "description": "Estimate future car value and yearly depreciation over 1 to 15 years. See the assumptions behind this free resale-value projection.",
+      "applicationCategory": "UtilitiesApplication",
+      "operatingSystem": "Any",
+      "browserRequirements": "Requires JavaScript and a modern web browser.",
+      "isAccessibleForFree": true,
+      "inLanguage": "en-US",
+      "image": "https://globtechco.github.io/AutoGlob/assets/tools/tool-depreciation.webp",
+      "publisher": {
+        "@id": "https://globtechco.github.io/AutoGlob/#organization"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      }
+    }
+  ]
+}</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" href="favicon.ico">
-<link rel="preload" href="styles.css?v=8" as="style">
-<link rel="stylesheet" href="styles.css?v=8">
+<link rel="preload" href="styles.css?v=9" as="style">
+<link rel="stylesheet" href="styles.css?v=9">
 </head>
 <body>
 
@@ -30,7 +122,7 @@
     <a href="index.html" class="brand">
       <picture>
         <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+        <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
       </picture>
     </a>
     <nav class="main-nav" id="mainNav">
@@ -51,9 +143,9 @@
 </header>
 
 <div class="container static-page">
-  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="tools.html">Tools</a> / Car Depreciation Calculator</p>
+  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / Car Depreciation Calculator</p>
   <h1 class="page-title">Car Depreciation Calculator</h1>
-  <p class="tool-intro">Enter a car's current price and age to project its approximate resale value years from now, using typical depreciation rates (steeper in the first three years, then leveling off).</p>
+  <p class="tool-intro">Enter a starting value and a projection period from 1 to 15 years. See a year-by-year scenario using the fixed depreciation schedule explained below.</p>
 
   <div class="tool-layout">
     <div class="tool-form">
@@ -71,7 +163,7 @@
       <p id="calcError" class="tool-error" style="display:none;"></p>
     </div>
 
-    <div class="tool-result" id="resultBox" style="display:none;">
+    <div class="tool-result" aria-live="polite" id="resultBox" style="display:none;">
       <h3>Result</h3>
       <div class="tool-result-value" id="futureValue">—</div>
       <p class="tool-result-label" id="futureLabel">projected value</p>
@@ -80,12 +172,10 @@
     </div>
   </div>
 
-  <div class="prose" style="max-width:none;">
-    <h2>Typical depreciation curve</h2>
-    <p>Most new cars lose roughly 20-25% of their value in the first year, then around 10-15% per year after that as the rate of decline slows. This calculator applies a simplified version of that curve: a steeper drop in years one through three, tapering to a gentler decline afterward.</p>
-  </div>
+  <section class="prose tool-guide"><h2>How to estimate future car value</h2><p>Enter a starting value and a whole number of years from 1 to 15. The tool applies an illustrative annual depreciation schedule to that starting value. It does not look up a vehicle's market price, age, mileage or condition.</p><h2>Depreciation assumptions and example</h2><p>The modeled annual reductions are 20%, 15%, 12%, 10%, 9%, 8%, 7%, 7%, 6% and 6%, followed by 6% annually through year 15. Each reduction applies to the previous year's remaining value.</p><p>For a starting value of $30,000, the model gives $24,000 after year one, $20,400 after year two and $17,952 after year three. These are scenario outputs, not predicted sale prices.</p><h2>Car depreciation calculator questions</h2><h3>Does this estimate a trade-in offer?</h3><p>No. It uses a generic schedule rather than live dealer or auction data.</p><h3>Can I use it for a used car?</h3><p>You can enter any starting value, but the schedule always starts at its first modeled year. It is not adjusted to the car's actual age.</p><h3>Does it account for mileage and condition?</h3><p>No. Mileage, damage, service history, location and demand are not inputs in this calculator.</p></section>
 </div>
 
+<div class="container"><section class="related-tools"><h2>More free car tools</h2><ul><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="tire-size-calculator.html">Tire Size Calculator</a></li><li><a href="fuel-cost-calculator.html">Fuel Cost Calculator</a></li><li><a href="loan-calculator.html">Auto Loan Calculator</a></li><li><a href="depreciation-calculator.html">Car Depreciation Calculator</a></li><li><a href="ev-charging-calculator.html">EV Charging Cost Calculator</a></li><li><a href="co2-calculator.html">Car CO2 Emissions Calculator</a></li></ul></section></div>
 <footer class="site-footer">
   <div class="container">
     <div class="footer-grid">
@@ -93,7 +183,7 @@
         <a href="index.html" class="brand">
           <picture>
             <source srcset="logo.webp" type="image/webp">
-            <img src="logo.png" alt="AutoGlob" class="brand-logo-img">
+            <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
           </picture>
         </a>
         <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
@@ -103,7 +193,7 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="tools.html">Tools</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
         </ul>
       </div>
       <div class="footer-col">
@@ -129,13 +219,14 @@
   </div>
 </footer>
 
-<script src="script.js?v=8" defer></script>
+<script src="script.js?v=9" defer></script>
 <script>
 function calc(){
   const price=+document.getElementById('currentPrice').value;
   const years=+document.getElementById('years').value;
   const err=document.getElementById('calcError');
-  if(!price||!years){ err.textContent='Please fill in both fields.'; err.style.display='block'; return; }
+  document.getElementById('resultBox').style.display='none';
+  if(!Number.isFinite(price)||price<=0||!Number.isInteger(years)||years<1||years>15){ err.textContent='Enter a positive value and a whole number of years from 1 to 15.'; err.style.display='block'; return; }
   err.style.display='none';
   const rates=[0.20,0.15,0.12,0.10,0.09,0.08,0.07,0.07,0.06,0.06];
   let value=price;
@@ -154,3 +245,4 @@ document.getElementById('calcBtn').addEventListener('click',calc);
 </script>
 </body>
 </html>
+
