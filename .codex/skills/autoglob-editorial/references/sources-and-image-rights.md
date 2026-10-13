@@ -6,11 +6,11 @@ Owner clarification: October 13, 2026. This policy supersedes earlier generation
 
 | Source | Exact URL | Role |
 |---|---|---|
-| Car and Driver | https://www.caranddriver.com/ | Current news, reporting, instrumented tests and image leads |
-| MotorTrend | https://www.motortrend.com/ | Current news, reporting, comparisons and measured tests |
-| Top Gear | https://www.topgear.com/ | Current news, reviews and automotive reporting; distinguish UK/US specifications |
+| Car and Driver | https://www.caranddriver.com/ | Current news, reporting and image leads; technical figures verified with manufacturer |
+| MotorTrend | https://www.motortrend.com/ | Current news and reporting; technical figures verified with manufacturer |
+| Top Gear | https://www.topgear.com/ | Current news and automotive reporting; distinguish UK/US specifications; exclude measured media tests |
 
-Use official brand sources to verify announcements and specifications. Supplement with Autoblog, archives, museums and other sources relevant to each article. Record source and event dates, distinguish test evidence from manufacturer claims, and choose a fresh original reporting angle.
+Use official brand sources to verify announcements and specifications. Supplement with Autoblog, archives, museums and other sources relevant to each article. Record source and event dates, publish only official manufacturer technical/performance figures, and choose a fresh original reporting angle.
 
 ## Brand-first image route
 
@@ -27,7 +27,7 @@ Authorize an original image only with asset-specific evidence covering AutoGlob'
 
 Editorial-only permissions may allow editorial coverage on a monetized site while prohibiting advertising/endorsement. Read the actual terms rather than treating all monetized editorial use as advertising or all pressroom media as unrestricted.
 
-If rights are unknown, record that status and find another authorized original or omit the image. Do not hotlink, crop out watermarks, regenerate the photograph or relabel it as a substitute for permission. Retain original frames and markings. Technical compression/resizing/conversion must fit the permission; do not change location, color, components or scene.
+If rights are unknown or prohibit publication, record that status. The owner authorizes a fallback AI illustration when an authorized official original is unavailable. Use verified vehicle references and an original composition, retain AI provenance internally without a public AI label as instructed by the owner, and verify model/year/trim and all visible details. Never claim generated work is an official press photograph or documentary evidence. Do not invent unpublished interiors/components. Do not hotlink a restricted original, crop out its watermark, or make a near-duplicate and claim that generation cleared its rights. If reliable depiction is impossible, omit the image. Retain original frames and markings. Technical compression/resizing/conversion must fit the permission; do not change location, color, components or scene.
 
 ## Per-image publication record
 
@@ -45,4 +45,10 @@ Evidence pages: https://www.caranddriver.com/ ; https://www.motortrend.com/ ; ht
 
 Discover current topics through permitted public search/discovery or expressly permitted APIs/feeds. Check applicable access conditions before implementing an automated collector. Use sources to identify factual leads and verify primary records; do not deploy blanket article/image scraping or bypass restrictions.
 
-Build the article from verified facts with a new lead, structure, explanatory angle and analysis. Keep exclusive findings attributed; retain tested configuration and methodological limits. Do not disguise copied expression, translated articles or line-by-line paraphrases as original journalism. Use only appropriately authorized reproductions and comply with applicable quotation/summarization limits.
+Build the article from verified facts with a new lead, structure, explanatory angle and analysis. Keep genuine sourced news identified, but exclude media measured tests and driving-test verdicts. Retain manufacturer configuration and published qualifications. Do not disguise copied expression, translated articles or line-by-line paraphrases as original journalism. Use only appropriately authorized reproductions and comply with applicable quotation/summarization limits.
+
+## Official technical figures only — October 13, 2026
+
+The owner's later clarification replaces the earlier independent-test attribution policy. Obtain technical/performance data only from official brand sources. Preserve units, model year, market, configuration, preliminary status and manufacturer conditions. Do not publish results or verdicts from Car and Driver, MotorTrend, Top Gear or other outlets' tests, even with attribution. A media news item can identify the topic; it does not supply AutoGlob's technical numbers. If an official figure is unavailable, omit it or identify that gap.
+
+AutoGlob's Analysis section explains published manufacturer specifications and their implications. It is not a test program. Historical primary records and explicitly hypothetical calculator arithmetic remain distinct evidence categories; legally required photo credits remain necessary.

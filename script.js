@@ -1,127 +1,6 @@
 // AutoGlob — shared site script
 
-var ARTICLES = [
-  {
-    "title": "1934 Duesenberg Model J: What Restoration Must Preserve",
-    "url": "duesenberg-1934-restoration.html",
-    "keywords": "duesenberg 1934 restoration"
-  },
-  {
-    "title": "Naturally Aspirated V12s: Three Different Ways Forward",
-    "url": "naturally-aspirated-v12-holdouts.html",
-    "keywords": "naturally aspirated v12 holdouts"
-  },
-  {
-    "title": "1960s Car Dashboards: Design Beyond the Nostalgia",
-    "url": "1960s-dashboards-design.html",
-    "keywords": "1960s dashboards design"
-  },
-  {
-    "title": "Used EV Prices: Look Beyond the Discount",
-    "url": "used-ev-prices-fell.html",
-    "keywords": "used ev prices fell"
-  },
-  {
-    "title": "The BMW 528i E39 and the Value of an Ordinary 5 Series",
-    "url": "bmw-528i-e39-story.html",
-    "keywords": "bmw 528i e39 story"
-  },
-  {
-    "title": "BMW 330i G20: Why the Model Year Matters",
-    "url": "bmw-330i-review.html",
-    "keywords": "bmw 330i review"
-  },
-  {
-    "title": "Volvo EX60 P10: Beyond the 400-Mile Headline",
-    "url": "volvo-ex60-p10-review.html",
-    "keywords": "volvo ex60 p10 review"
-  },
-  {
-    "title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs",
-    "url": "gas-hybrid-ev-ownership-cost-guide.html",
-    "keywords": "gas hybrid ev ownership cost guide"
-  },
-  {
-    "title": "2027 Electric Mercedes C-Class: What U.S. Buyers Know",
-    "url": "mercedes-c-class-ev.html",
-    "keywords": "mercedes c class ev"
-  },
-  {
-    "title": "DeLorean Before the Time Machine: The Company That Almost Wasn't",
-    "url": "delorean-before-time-machine.html",
-    "keywords": "delorean before time machine"
-  },
-  {
-    "title": "From Chiron to Tourbillon: Bugatti Changes Its Formula",
-    "url": "bugatti-chiron.html",
-    "keywords": "bugatti chiron"
-  },
-  {
-    "title": "Group B Rally: Innovation Outran the Rules",
-    "url": "group-b-rally-era.html",
-    "keywords": "group b rally era"
-  },
-  {
-    "title": "Tucker 48: The Car, the Company and the Myth",
-    "url": "tucker-car-too-honest-detroit.html",
-    "keywords": "tucker car too honest detroit"
-  },
-  {
-    "title": "Classic Car Auction Prices: What the Hammer Leaves Out",
-    "url": "classic-car-auction-hammer-price.html",
-    "keywords": "classic car auction hammer price"
-  },
-  {
-    "title": "2026 Honda CR-V Gas vs Hybrid: Run the Numbers",
-    "url": "honda-crv-first-test.html",
-    "keywords": "honda crv first test"
-  },
-  {
-    "title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade",
-    "url": "bmw-ix3-m60-2027.html",
-    "keywords": "bmw ix3 m60 2027"
-  },
-  {
-    "title": "Corvette Grand Sport X: What 721 HP and AWD Change",
-    "url": "corvette-grand-sport-x-test-analysis.html",
-    "keywords": "corvette grand sport x test analysis"
-  },
-  {
-    "title": "VIN Decoder",
-    "url": "vin-decoder.html",
-    "keywords": "vin decoder"
-  },
-  {
-    "title": "Tire Size Calculator",
-    "url": "tire-size-calculator.html",
-    "keywords": "tire size calculator"
-  },
-  {
-    "title": "Fuel Cost Calculator",
-    "url": "fuel-cost-calculator.html",
-    "keywords": "fuel cost calculator"
-  },
-  {
-    "title": "Auto Loan Calculator",
-    "url": "loan-calculator.html",
-    "keywords": "loan calculator"
-  },
-  {
-    "title": "Car Depreciation Calculator",
-    "url": "depreciation-calculator.html",
-    "keywords": "depreciation calculator"
-  },
-  {
-    "title": "EV Charging Cost Calculator",
-    "url": "ev-charging-calculator.html",
-    "keywords": "ev charging calculator"
-  },
-  {
-    "title": "Car CO2 Emissions Calculator",
-    "url": "co2-calculator.html",
-    "keywords": "co2 calculator"
-  }
-];
+var ARTICLES = [{"title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade", "url": "bmw-ix3-m60-2027.html", "category": "News", "topics": ["BMW", "EV", "SUV"], "date": "2026-10-12"}, {"title": "Volvo EX60 P10: Beyond the 400-Mile Headline", "url": "volvo-ex60-p10-review.html", "category": "Analysis", "topics": ["Volvo", "EV", "SUV"], "date": "2026-10-12"}, {"title": "Corvette Grand Sport X: What 721 HP and AWD Change", "url": "corvette-grand-sport-x-test-analysis.html", "category": "Analysis", "topics": ["Chevrolet", "Hybrid", "Performance"], "date": "2026-10-12"}, {"title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs", "url": "gas-hybrid-ev-ownership-cost-guide.html", "category": "Guides", "topics": ["Ownership", "Hybrid", "EV"], "date": "2026-10-12"}, {"title": "The BMW 528i E39 and the Value of an Ordinary 5 Series", "url": "bmw-528i-e39-story.html", "category": "Stories", "topics": ["BMW", "Classics"], "date": "2026-10-12"}, {"title": "2026 Honda CR-V Gas vs Hybrid: Run the Numbers", "url": "honda-crv-first-test.html", "category": "Analysis", "topics": ["Honda", "Hybrid", "SUV"], "date": "2026-07-31"}, {"title": "2027 Electric Mercedes C-Class: What U.S. Buyers Know", "url": "mercedes-c-class-ev.html", "category": "News", "topics": ["Mercedes-Benz", "EV"], "date": "2026-07-28"}, {"title": "BMW 330i G20: Why the Model Year Matters", "url": "bmw-330i-review.html", "category": "Analysis", "topics": ["BMW"], "date": "2026-07-24"}, {"title": "From Chiron to Tourbillon: Bugatti Changes Its Formula", "url": "bugatti-chiron.html", "category": "Analysis", "topics": ["Bugatti", "Performance"], "date": "2026-07-21"}, {"title": "Naturally Aspirated V12s: Three Different Ways Forward", "url": "naturally-aspirated-v12-holdouts.html", "category": "Analysis", "topics": ["Performance", "Engineering"], "date": "2026-07-20"}, {"title": "Used EV Prices: Look Beyond the Discount", "url": "used-ev-prices-fell.html", "category": "Guides", "topics": ["Ownership", "EV"], "date": "2026-07-19"}, {"title": "1934 Duesenberg Model J: What Restoration Must Preserve", "url": "duesenberg-1934-restoration.html", "category": "Stories", "topics": ["Duesenberg", "Classics"], "date": "2026-07-15"}, {"title": "DeLorean Before the Time Machine: The Company That Almost Wasn't", "url": "delorean-before-time-machine.html", "category": "Stories", "topics": ["DeLorean", "Classics"], "date": "2026-07-12"}, {"title": "Group B Rally: Innovation Outran the Rules", "url": "group-b-rally-era.html", "category": "Stories", "topics": ["Motorsport", "Classics"], "date": "2026-07-10"}, {"title": "1960s Car Dashboards: Design Beyond the Nostalgia", "url": "1960s-dashboards-design.html", "category": "Stories", "topics": ["Design", "Classics"], "date": "2026-07-08"}, {"title": "Tucker 48: The Car, the Company and the Myth", "url": "tucker-car-too-honest-detroit.html", "category": "Stories", "topics": ["Tucker", "Classics"], "date": "2026-07-05"}, {"title": "Classic Car Auction Prices: What the Hammer Leaves Out", "url": "classic-car-auction-hammer-price.html", "category": "Guides", "topics": ["Classics", "Ownership"], "date": "2026-07-03"}, {"title": "VIN Decoder", "url": "vin-decoder.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "Tire Size Calculator", "url": "tire-size-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "Fuel Cost Calculator", "url": "fuel-cost-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "Auto Loan Calculator", "url": "loan-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "Car Depreciation Calculator", "url": "depreciation-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "EV Charging Cost Calculator", "url": "ev-charging-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "Car CO2 Emissions Calculator", "url": "co2-calculator.html", "category": "Tools", "topics": ["Calculator", "Ownership"], "date": ""}, {"title": "News", "url": "news.html", "category": "Section", "topics": [], "date": ""}, {"title": "Analysis", "url": "test-drives.html", "category": "Section", "topics": [], "date": ""}, {"title": "Guides", "url": "guides.html", "category": "Section", "topics": [], "date": ""}, {"title": "Stories", "url": "stories.html", "category": "Section", "topics": [], "date": ""}, {"title": "Tools", "url": "tools.html", "category": "Section", "topics": [], "date": ""}, {"title": "All Articles", "url": "all-articles.html", "category": "Archive", "topics": [], "date": ""}];
 
 document.addEventListener('DOMContentLoaded', function () {
 
@@ -189,16 +68,19 @@ document.addEventListener('DOMContentLoaded', function () {
       if (previousFocus && previousFocus.focus) previousFocus.focus();
     }
     function renderResults(query) {
-      var q = query.trim().toLowerCase();
-      var matches = q === '' ? ARTICLES : ARTICLES.filter(function (a) {
-        return (a.title + ' ' + (a.keywords || '')).toLowerCase().indexOf(q) !== -1;
-      });
+      var q = normalizeSearch(query);
+      var matches = ARTICLES.map(function(a) {
+        var title = normalizeSearch(a.title), body = normalizeSearch(a.title + ' ' + a.category + ' ' + (a.topics || []).join(' '));
+        var tokens = q.split(' ').filter(Boolean);
+        var matched = tokens.every(function(t) { return body.indexOf(t) !== -1 || body.replace(/ /g, '').indexOf(t) !== -1; });
+        return {article:a, score:!matched ? -1 : title === q ? 100 : title.indexOf(q) === 0 ? 80 : title.indexOf(q) !== -1 ? 60 : 20};
+      }).filter(function(x) { return x.score >= 0; }).sort(function(a,b) { return b.score-a.score || (b.article.date || '').localeCompare(a.article.date || ''); }).map(function(x) { return x.article; });
       status.textContent = matches.length ? matches.length + ' results' : 'No matches. Try a different word.';
       results.replaceChildren();
       matches.forEach(function (article) {
         var a = document.createElement('a');
         a.href = article.url;
-        a.textContent = article.title;
+        var label = document.createElement('small'); label.textContent = article.category; a.appendChild(label); var title = document.createElement('span'); title.textContent = article.title; a.appendChild(title);
         results.appendChild(a);
       });
     }
@@ -252,3 +134,26 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
+
+function normalizeSearch(value) {
+ return value.toLowerCase().normalize('NFKD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,' ').trim();
+}
+document.addEventListener('DOMContentLoaded', function() {
+ var form=document.querySelector('.archive-filters'); if(!form)return;
+ var section=document.getElementById('archive-section'), topic=document.getElementById('archive-topic');
+ var params=new URLSearchParams(location.search);
+ if(Array.from(topic.options).some(function(o){return o.value===params.get('topic');}))topic.value=params.get('topic');
+ if(Array.from(section.options).some(function(o){return o.value===params.get('section');}))section.value=params.get('section');
+ function filter(){
+  var count=0; document.querySelectorAll('.article-grid .card').forEach(function(card){
+   var show=(!section.value || card.dataset.category===section.value)&&(!topic.value || card.dataset.topics.split('|').includes(topic.value));
+   card.hidden=!show; if(show)count++;
+  });
+  document.getElementById('archive-status').textContent=count+' article'+(count===1?'':'s');
+  document.querySelector('.archive-empty').hidden=count!==0;
+  var p=new URLSearchParams();if(section.value)p.set('section',section.value);if(topic.value)p.set('topic',topic.value);
+  history.replaceState(null,'',location.pathname+(p.toString()?'?'+p:''));
+ }
+ form.addEventListener('change',filter);form.addEventListener('submit',function(e){e.preventDefault();filter();});
+ form.addEventListener('reset',function(){setTimeout(filter,0);});filter();
+});

@@ -1,13 +1,14 @@
 interface:
-  display_name: "AutoGlob Editorial"
-  short_description: "Verified articles and licensed original car photos"
-  default_prompt: "Use $autoglob-editorial to research a current AutoGlob story, write original analysis and select original photos with verified publication rights."
-  icon_small: "assets/icon.svg"
-  icon_large: "assets/icon.svg"
+  display_name: AutoGlob Editorial
+  short_description: Verified articles and licensed original car photos
+  default_prompt: Use $autoglob-editorial to research a current AutoGlob story, write
+    original analysis and select original photos with verified publication rights.
+  icon_small: assets/icon.svg
+  icon_large: assets/icon.svg
 policy:
   products:
-  - "chatgpt"
-  - "codex"
-  - "api"
-  - "atlas"
+  - chatgpt
+  - codex
+  - api
+  - atlas
   allow_implicit_invocation: true

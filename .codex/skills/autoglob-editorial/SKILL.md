@@ -1,6 +1,6 @@
 ---
 name: autoglob-editorial
-description: Research, write, audit and publish AutoGlob automotive articles and related X posts using current news, attributed tests and licensed original vehicle photography. Use for AutoGlob source monitoring, image rights verification, article corrections, SEO and editorial site changes. Apply article-specific judgment rather than a fixed image or writing template.
+description: Research, write, audit and publish AutoGlob automotive articles and related X posts using current news, official manufacturer specifications and licensed original vehicle photography. Use for AutoGlob source monitoring, image rights verification, article corrections, SEO and editorial site changes. Apply article-specific judgment rather than a fixed image or writing template.
 ---
 
 # AutoGlob editorial judgment
@@ -9,9 +9,9 @@ Read [project-rules.md](references/project-rules.md) for persistent project, lan
 
 ## Use the three designated sources
 
-Check Car and Driver (https://www.caranddriver.com/), MotorTrend (https://www.motortrend.com/) and Top Gear (https://www.topgear.com/) for current automotive news, independent tests, reporting and image leads. Treat these as required reporting sources, not merely design inspiration. Use Autoblog and other relevant publications as supplements. Verify announcements, specifications and model-year facts against official brand pressrooms and primary records.
+Check Car and Driver (https://www.caranddriver.com/), MotorTrend (https://www.motortrend.com/) and Top Gear (https://www.topgear.com/) for current automotive news, reporting and image leads. Treat these as required reporting sources, not merely design inspiration. Use Autoblog and other relevant publications as supplements. Verify announcements, specifications and model-year facts against official brand pressrooms and primary records.
 
-Compare publication date, modification date and event date. Determine the latest meaningful reporting, not simply the first homepage item. Deduplicate coverage of the same event and record the exact source URL, dates, market, claims and independent measurements. Do not call an old article current because it was resurfaced or mechanically updated.
+Compare publication date, modification date and event date. Determine the latest meaningful reporting, not simply the first homepage item. Deduplicate coverage of the same event and record the exact source URL, dates, market and manufacturer-confirmed specifications. Do not call an old article current because it was resurfaced or mechanically updated.
 
 Use permitted public discovery/search, explicitly permitted feeds or APIs, and source-specific access rules. Check terms, robots and feed/API conditions before building automated collection. A public page or RSS feed does not by itself grant republication, commercial scraping or image rights. Do not bypass paywalls/access controls or deploy a full-text scraper without a suitable permission basis. State concrete access gaps instead of inventing source contents.
 
@@ -21,7 +21,11 @@ Treat AutoGlob as a commercial publication. Write with the care and judgment of 
 
 Interpret the user's rewrite request as a fresh fact-based article with original structure and analysis. Do not closely paraphrase a full copyrighted article, reproduce its distinctive sequence, copy expression or convert it sentence by sentence. Combine verified facts and useful context across suitable sources. Obtain actual authorization before reproducing licensed text or substantial tables.
 
-Attribute another outlet's exclusive reporting, quotations and measurements. Preserve the tested trim, tires, units, procedure and limitations. Separate manufacturer claims, independent results and AutoGlob calculations. Never turn a sourced drive or interview into AutoGlob's firsthand experience; do not invent quotes, people, credentials, pricing or price forecasts.
+Use ONLY official brand/manufacturer sources for vehicle technical specifications and performance figures. Include manufacturer-published acceleration, range, power, torque, charging and other specifications with the exact model year, market, configuration, units and qualifying conditions. Label them as manufacturer claims, estimates or officially published certified figures as appropriate. Preserve preliminary status; never turn an official estimate into an AutoGlob measurement.
+
+Exclude outlet road-test results and measurements altogether: no borrowed acceleration/range/braking/lateral-grip/weight results, subjective driving-test conclusions, comparison-test verdicts or attribution of those measurements. AutoGlob does not conduct tests or repackage others' tests. Use Car and Driver, MotorTrend and Top Gear to discover news topics, then verify technical numbers in the relevant brand's official source. If the brand has not published the figure, say it is unconfirmed or omit it rather than filling the gap with a media test. Do not promise to revisit a claim through independent testing.
+
+Keep genuine news-source attribution and legally required image credits where applicable. The official-specification rule applies to vehicle technical/performance claims; it does not prohibit clearly labeled hypothetical calculator arithmetic or historical/market facts supported by appropriate primary records.
 
 Keep necessary public attribution unobtrusive. Prefer contextual attribution and a compact collapsed source block over numbered markers throughout prose. Keep full research and image provenance in project documentation. Respect license-required visible credits and links even when reader retention is a commercial goal.
 
@@ -29,7 +33,7 @@ Use Car and Driver selectively for editorial hierarchy and readability; do not c
 
 ## Select original photographs and verify rights
 
-Publish authorized ORIGINAL photographs by default. Do not generate replacement imagery, change scenes/locations, redesign vehicles, remove identifying details or automatically edit photos. The user's October 13, 2026 correction supersedes older generation instructions. Generate or semantically edit images only after a later explicit task-specific request; lack of a suitable licensed photo is not permission to generate one.
+Publish authorized ORIGINAL photographs from official brand pressrooms first. Under the owner’s latest October 13, 2026 clarification, if publication permission is unavailable or the license prohibits our use, generate an AI illustration as the authorized fallback without asking again. Base it on verified references for the exact vehicle; do not add a public AI label, per the owner’s latest explicit instruction. Keep generation provenance and references in internal records; never claim it is an official photograph or documentary evidence. Create an original composition rather than a near-duplicate of a restricted photograph. Preserve model/year/trim/color and supported details; do not invent unpublished interiors or components. Use realistic editorial lighting and verify the result before publication. Do not alter licensed originals beyond their permitted technical processing.
 
 When a designated outlet reveals or reports on a new model, use it as the news lead and go FIRST to that vehicle brand's official website/pressroom for the original photographs and the brand's applicable publication terms. Verify the exact model/year/configuration and the asset-specific permission there. Do not stop at the outlet's republication policy or assume only publisher licensing is available. Publish the authorized brand-supplied original directly from its source; a brand's permission for its own press assets does not automatically authorize a separate photograph taken by an outlet's photographer. Apply this route to every brand/model under coverage.
 
@@ -37,7 +41,7 @@ Trace each asset to its actual creator/rightsholder and original source. Check t
 
 Record evidence per asset: original source and file URLs, creator, rightsholder, exact license/permission URL and version, checked date, permitted use, required credit, allowed technical processing and publication decision. Do not equate unknown rights with open rights. See the rights reference for decision criteria and the initial source assessment.
 
-If publisher photography is not authorized, look for the same verified subject in an official pressroom with an applicable editorial permission, an image-specific commercial-compatible open license, or a public-domain record with a verified basis. If none is available, omit the image or retain the article in draft with the concrete missing permission. Do not send permission requests or purchase licenses without the user's authorization for that communication or expense.
+If publisher photography is not authorized, look for the same verified subject in an official pressroom with an applicable editorial permission, an image-specific commercial-compatible open license, or a public-domain record with a verified basis. If no authorized original is available, use the AI-illustration fallback above; if accurate depiction cannot be supported, omit the image or retain the article in draft with the concrete evidence gap. Do not send permission requests or purchase licenses without the user's authorization for that communication or expense.
 
 Preserve originals' scene, framing and visible details, including plates, watermarks, credits and markings. Do not remove a watermark as a supposed rights fix. Apply only license-permitted technical resizing/compression/format conversion without changing visual content. Preserve an original file and rights evidence; honor terms requiring unchanged distribution.
 
@@ -49,7 +53,7 @@ Use photographs of the same physical car where practical, or documented matching
 
 Verify identity before trusting filenames or captions. Do not mix facelift generations, stock/modified parts, performance/standard trims or dashboard layouts. Prioritize U.S.-market and left-hand-drive references when appropriate; label other-market vehicles and never mirror a cabin to fabricate specification. Use supported interior references and meaningful distinct views when available.
 
-Preserve good approved existing imagery during text/SEO fixes. A weak text is not a reason to replace a good image. Existing BMW G20, Honda CR-V and Bugatti image sets remain approved unless a concrete image defect or a specific replacement instruction requires a change. Keep legacy generated-image labels honest until an authorized original is actually installed; do not relabel existing illustrations as real photographs.
+Preserve good approved existing imagery during text/SEO fixes. A weak text is not a reason to replace a good image. Existing BMW G20, Honda CR-V and Bugatti image sets remain approved unless a concrete image defect or a specific replacement instruction requires a change. Do not require public AI labels. Never describe generated images as real press photographs; preserve provenance internally.
 
 Write literal alt text and captions. Never use an unrelated car, cabin, wheel or engine as a named model. Do not use an illustration as documentary proof of an event, measurement or condition.
 
@@ -57,7 +61,7 @@ Write literal alt text and captions. Never use an unrelated car, cabin, wheel or
 
 Install authorized assets in the actual GitHub project. Preserve useful resolution and full subject framing. Use allowed responsive variants, real dimensions, compression and versioned filenames. Verify decoded nonempty files and uploaded blob hashes.
 
-Update the article, homepage/archive cards, social metadata, truthful Article schema and sitemap together where changed imagery or headlines are consumed. Keep canonical URLs stable; preserve publication dates and add honest modification dates. Use truthful bylines and realistic reading time.
+Update the article, homepage/archive cards, social metadata, truthful Article schema and sitemap together where changed imagery or headlines are consumed. Keep canonical URLs stable; preserve publication dates and add honest modification dates. Use truthful bylines and realistic reading time. Call the technical section Analysis, not Test Drives; retain existing URLs when renaming visible navigation to avoid broken links.
 
 Verify the published page, image loading, visible required credits, navigation, both themes and relevant listings. Respect branch concurrency; publish against the current expected head. Complete authorized work autonomously and report results and concrete remaining limitations in Ukrainian.
 
