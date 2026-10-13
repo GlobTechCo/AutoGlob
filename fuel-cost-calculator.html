@@ -1,26 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
 <head>
 <script>(function(){var t;try{t=localStorage.getItem('autoglob_theme');}catch(e){}document.documentElement.dataset.theme=(t==='dark'||t==='light')?t:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');})();</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Gas &amp; Fuel Cost Calculator: MPG and Trip Cost | AutoGlob</title>
-<meta name="description" content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://globtechco.github.io/AutoGlob/fuel-cost-calculator.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AutoGlob">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="Gas &amp; Fuel Cost Calculator: MPG and Trip Cost | AutoGlob">
-<meta property="og:description" content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles.">
-<meta property="og:url" content="https://globtechco.github.io/AutoGlob/fuel-cost-calculator.html">
-<meta property="og:image" content="https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp">
-<meta property="og:image:alt" content="Fuel Cost Calculator">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Gas &amp; Fuel Cost Calculator: MPG and Trip Cost | AutoGlob">
-<meta name="twitter:description" content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles.">
-<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp">
-<meta name="twitter:image:alt" content="Fuel Cost Calculator">
+<meta content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://globtechco.github.io/AutoGlob/fuel-cost-calculator.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="AutoGlob" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="Gas &amp; Fuel Cost Calculator: MPG and Trip Cost | AutoGlob" property="og:title"/>
+<meta content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles." property="og:description"/>
+<meta content="https://globtechco.github.io/AutoGlob/fuel-cost-calculator.html" property="og:url"/>
+<meta content="https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp" property="og:image"/>
+<meta content="Fuel Cost Calculator" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="Gas &amp; Fuel Cost Calculator: MPG and Trip Cost | AutoGlob" name="twitter:title"/>
+<meta content="Estimate gas costs for a trip using miles, US MPG and price per gallon, or kilometers and liters. Calculate fuel needed and cost per 100 miles." name="twitter:description"/>
+<meta content="https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp" name="twitter:image"/>
+<meta content="Fuel Cost Calculator" name="twitter:image:alt"/>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -110,138 +111,131 @@
     }
   ]
 }</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="favicon.ico">
-<link rel="preload" href="styles.css?v=11" as="style">
-<link rel="stylesheet" href="styles.css?v=11">
-<link rel="stylesheet" href="theme.css?v=1">
-<script src="theme.js?v=1" defer></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon"/>
+<link as="style" href="styles.css?v=12" rel="preload"/>
+<link href="styles.css?v=12" rel="stylesheet"/>
+<link href="theme.css?v=2" rel="stylesheet"/>
+<script defer="" src="theme.js?v=1"></script>
 </head>
-<body>
-
+<body><a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <picture>
-        <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
-      </picture>
-    </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="news.html">News</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="test-drives.html">Test Drives</a>
-      <a href="stories.html">Stories</a>
-      <a href="tools.html" class="active">Tools</a>
-      <a href="about.html">About Us</a>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="container static-page">
-  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / Fuel Cost Calculator</p>
-  <h1 class="page-title">Fuel Cost Calculator</h1>
-  <p class="tool-intro">Estimate how much a trip (or your regular monthly driving) actually costs in fuel, based on distance, your car's fuel economy, and the local price per liter or gallon.</p>
-
-  <div class="tool-layout">
-    <div class="tool-form">
-      <div class="tool-row">
-      <div class="tool-field">
-        <label for="distance">Distance</label>
-        <input type="number" id="distance" placeholder="500">
-      </div>
-      <div class="tool-field">
-        <label for="unit">Unit</label>
-        <select id="unit"><option value="km">Kilometers</option>
-<option value="mi" selected>Miles</option></select>
-      </div>
-      </div>
-      <div class="tool-row">
-      <div class="tool-field">
-        <label for="economy">Fuel Economy</label>
-        <input type="number" id="economy" placeholder="7.5">
-      </div>
-      <div class="tool-field">
-        <label for="econUnit">Economy Unit</label>
-        <select id="econUnit"><option value="l100">L / 100km</option>
-<option value="mpg" selected>MPG (US)</option></select>
-      </div>
-      </div>
-      <div class="tool-field">
-        <label for="price">Fuel Price ($ per US gallon or liter)</label>
-        <input type="number" id="price" placeholder="1.65">
-      </div>
-      <button class="btn" id="calcBtn" type="button">Calculate Cost</button>
-      <p id="calcError" class="tool-error" style="display:none;"></p>
-    </div>
-
-    <div class="tool-result" aria-live="polite" id="resultBox" style="display:none;">
-      <h3>Result</h3>
-      <div class="tool-result-value" id="totalCost">—</div>
-      <p class="tool-result-label">estimated fuel cost</p>
-      <table class="tool-result-table">
-        <tr><td>Fuel needed</td><td id="fuelNeeded">—</td></tr>
-        <tr><td id="costPer100Label">Cost per 100 miles</td><td id="costPer100">—</td></tr>
-      </table>
-      <p class="tool-disclaimer">Actual consumption varies with driving style, terrain, load, and weather. Use manufacturer fuel economy figures as a starting estimate, not a guarantee.</p>
-    </div>
-  </div>
-
-  <section class="prose tool-guide"><h2>How to calculate gas costs for a trip</h2><p>Choose miles or kilometers, enter your fuel economy and select US MPG or liters per 100 km. When you select US MPG, enter the price per US gallon; when you select L/100 km, enter the price per liter. Enter one-way or round-trip distance as needed.</p><h2>Gas cost formula and example</h2><p>For US units: gallons needed = miles ÷ MPG, and trip cost = gallons × price per gallon. A 300-mile trip at 30 MPG needs 10 US gallons. At $3.50 per gallon, the estimated gas cost is $35.00.</p><p>For metric units: liters needed = kilometers × liters per 100 km ÷ 100. A 500-km trip at 7 L/100 km needs 35 liters; at $1.60 per liter, the estimate is $56.00.</p><h2>Fuel cost calculator questions</h2><h3>Can I calculate a round trip?</h3><p>Yes. Enter the total distance for both directions, including any extra planned driving.</p><h3>Does this use US or Imperial gallons?</h3><p>The MPG option uses US gallons. Imperial MPG is a different measure and should be converted before entering it.</p><h3>Is this the full cost of driving?</h3><p>No. The estimate covers fuel only. It excludes tolls, parking, insurance, maintenance and depreciation.</p></section>
+<div class="container header-inner">
+<a class="brand" href="index.html">
+<picture>
+<source srcset="logo.webp" type="image/webp"/>
+<img alt="AutoGlob" class="brand-logo-img" decoding="async" height="98" src="logo.png" width="700"/>
+</picture>
+</a>
+<nav class="main-nav" id="mainNav">
+<a href="news.html">News</a>
+<a href="reviews.html">Reviews</a>
+<a href="test-drives.html">Test Drives</a>
+<a href="stories.html">Stories</a>
+<a class="active" href="tools.html">Tools</a>
+<a href="about.html">About Us</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Search" class="icon-btn search-btn"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg></button>
+<button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
 </div>
-
+</div>
+</header><main id="main-content">
+<div class="container static-page">
+<p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / Fuel Cost Calculator</p>
+<h1 class="page-title">Fuel Cost Calculator</h1>
+<p class="tool-intro">Estimate how much a trip (or your regular monthly driving) actually costs in fuel, based on distance, your car's fuel economy, and the local price per liter or gallon.</p>
+<div class="tool-layout">
+<div class="tool-form">
+<div class="tool-row">
+<div class="tool-field">
+<label for="distance">Distance</label>
+<input id="distance" placeholder="500" type="number"/>
+</div>
+<div class="tool-field">
+<label for="unit">Unit</label>
+<select id="unit"><option value="km">Kilometers</option>
+<option selected="" value="mi">Miles</option></select>
+</div>
+</div>
+<div class="tool-row">
+<div class="tool-field">
+<label for="economy">Fuel Economy</label>
+<input id="economy" placeholder="7.5" type="number"/>
+</div>
+<div class="tool-field">
+<label for="econUnit">Economy Unit</label>
+<select id="econUnit"><option value="l100">L / 100km</option>
+<option selected="" value="mpg">MPG (US)</option></select>
+</div>
+</div>
+<div class="tool-field">
+<label for="price">Fuel Price ($ per US gallon or liter)</label>
+<input id="price" placeholder="1.65" type="number"/>
+</div>
+<button class="btn" id="calcBtn" type="button">Calculate Cost</button>
+<p class="tool-error" id="calcError" style="display:none;"></p>
+</div>
+<div aria-live="polite" class="tool-result" id="resultBox" style="display:none;">
+<h3>Result</h3>
+<div class="tool-result-value" id="totalCost">—</div>
+<p class="tool-result-label">estimated fuel cost</p>
+<table class="tool-result-table">
+<tr><td>Fuel needed</td><td id="fuelNeeded">—</td></tr>
+<tr><td id="costPer100Label">Cost per 100 miles</td><td id="costPer100">—</td></tr>
+</table>
+<p class="tool-disclaimer">Actual consumption varies with driving style, terrain, load, and weather. Use manufacturer fuel economy figures as a starting estimate, not a guarantee.</p>
+</div>
+</div>
+<section class="prose tool-guide"><h2>How to calculate gas costs for a trip</h2><p>Choose miles or kilometers, enter your fuel economy and select US MPG or liters per 100 km. When you select US MPG, enter the price per US gallon; when you select L/100 km, enter the price per liter. Enter one-way or round-trip distance as needed.</p><h2>Gas cost formula and example</h2><p>For US units: gallons needed = miles ÷ MPG, and trip cost = gallons × price per gallon. A 300-mile trip at 30 MPG needs 10 US gallons. At $3.50 per gallon, the estimated gas cost is $35.00.</p><p>For metric units: liters needed = kilometers × liters per 100 km ÷ 100. A 500-km trip at 7 L/100 km needs 35 liters; at $1.60 per liter, the estimate is $56.00.</p><h2>Fuel cost calculator questions</h2><h3>Can I calculate a round trip?</h3><p>Yes. Enter the total distance for both directions, including any extra planned driving.</p><h3>Does this use US or Imperial gallons?</h3><p>The MPG option uses US gallons. Imperial MPG is a different measure and should be converted before entering it.</p><h3>Is this the full cost of driving?</h3><p>No. The estimate covers fuel only. It excludes tolls, parking, insurance, maintenance and depreciation.</p></section>
+</div>
 <div class="container"><section class="related-tools"><h2>More free car tools</h2><ul><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="tire-size-calculator.html">Tire Size Calculator</a></li><li><a href="fuel-cost-calculator.html">Fuel Cost Calculator</a></li><li><a href="loan-calculator.html">Auto Loan Calculator</a></li><li><a href="depreciation-calculator.html">Car Depreciation Calculator</a></li><li><a href="ev-charging-calculator.html">EV Charging Cost Calculator</a></li><li><a href="co2-calculator.html">Car CO2 Emissions Calculator</a></li></ul></section></div>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <picture>
-            <source srcset="logo.webp" type="image/webp">
-            <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
-          </picture>
-        </a>
-        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Categories</h4>
-        <ul>
-          <li><a href="news.html">News</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="test-drives.html">Test Drives</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="cookies.html">Cookie Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 AutoGlob. All rights reserved.</span>
-      <span>Made for people who read the whole story.</span>
-    </div>
-  </div>
+</main><footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="brand" href="index.html">
+<picture>
+<source srcset="logo.webp" type="image/webp"/>
+<img alt="AutoGlob" class="brand-logo-img" decoding="async" height="98" loading="lazy" src="logo.png" width="700"/>
+</picture>
+</a>
+<p>Automotive news, researched reviews, history and practical tools. Time &amp; Road — stories behind the machines.</p>
+</div>
+<div class="footer-col">
+<h4>Explore</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="tools.html">Tools</a></li>
+<li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Categories</h4>
+<ul>
+<li><a href="news.html">News</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="test-drives.html">Test Drives</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<ul>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="cookies.html">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 AutoGlob. All rights reserved.</span>
+<span>Made for people who read the whole story.</span>
+</div>
+</div>
 </footer>
-
-<script src="script.js?v=11" defer></script>
+<script defer="" src="script.js?v=12"></script>
 <script>
 function calc(){
   const dist=+document.getElementById('distance').value;
@@ -268,6 +262,4 @@ document.getElementById('calcBtn').addEventListener('click',calc);
 </script>
 </body>
 </html>
-
-
 

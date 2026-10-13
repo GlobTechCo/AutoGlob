@@ -13,6 +13,8 @@ Identify the article's purpose, factual claims, featured vehicles and evidence a
 
 Create a short working selection record: each image, what it explains, exact reference, vehicle identity and any limitation. Keep it in project provenance documentation; omit decorative or redundant images.
 
+Preserve good existing images during a text or SEO audit. A weak article is not a reason to regenerate its successful imagery. Replace or edit only an individually verified image defect or an explicit user-requested change; record the concrete reason. In the current BMW G20, Honda CR-V and Bugatti articles, retain the existing images and correct text/captions instead.
+
 Set image count individually. Never impose three, four or five images, a universal front/interior/rear/console sequence, or a minimum number of scenes. A short concept reveal may need one verified exterior. A restoration story may benefit from several authentic details. Use zero images when none can be supported or legally sourced; explain the concrete gap without inventing evidence.
 
 Use distinct relevant views when useful. Repeating an angle against new backgrounds supplies no new information. A crop can clarify a visible feature; it cannot reveal a feature absent from the source.
@@ -44,6 +46,14 @@ Compare each result with its own source and the selected series. Reject wrong wh
 Write literal accurate alt text and captions. Never label unrelated stock as a named vehicle, engine, cabin or factory. Do not use generated scenes as proof of an event or measurement.
 
 ## Research and write
+
+Treat AutoGlob as a commercial publication whose value comes from useful, original journalism and returning readers. Write with the care and judgment of an experienced automotive journalist; do not claim personal credentials, interviews or road tests that did not occur.
+
+Before drafting, establish the reader's question, the reporting angle and the evidence. Lead with the consequential finding, then explain its mechanism, context and practical significance. Select sections to fit the story. Use precise language, realistic comparisons, dated market facts and clear U.S. model-year distinctions. Add original interpretation, not a paraphrase of a press release. Cut clichés, inflated claims, mechanical transitions, repeated conclusions and filler. Match reading time to the actual article. For an audit, review inherited articles as carefully as new ones.
+
+Use Car and Driver as inspiration for editorial hierarchy, readable layouts, photography and useful connections between stories. Do not copy its prose, branding or full section catalog. Choose features that fit AutoGlob's content and operating capacity; do not add empty marketplaces, rankings, subscriptions or untested product recommendations.
+
+Keep public source attribution proportionate. Prefer unobtrusive contextual attribution and a compact, collapsed sources block to numbered academic markers throughout the prose. Use official brands, institutions and original documents where suitable; retain attribution when using another publication's exclusive reporting or measurements. Keep full research and image provenance in project documentation. Prioritize relevant internal links for reader retention; do not disguise advertising, label genuine citations as affiliate links, or treat commercial goals as permission to suppress important evidence.
 
 Check official brand pressrooms and specifications for announcements, engineering, recalls and model-year facts. Use major automotive publications, including Autoblog, Car and Driver and others relevant to the topic, for context and independent reporting. Do not claim to have checked all large sites or audience rankings without evidence. Seek broad relevant coverage, not a token citation list.
 

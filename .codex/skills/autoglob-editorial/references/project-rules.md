@@ -1,5 +1,10 @@
 # Persistent AutoGlob project rules
 
+- AutoGlob is a commercial project intended for monetization. Develop its own editorial value, reader trust and useful internal journeys; do not invent affiliate relationships, ad accounts, audience numbers or test credentials.
+- Write and review every article, including legacy material, with the rigor of an experienced automotive journalist. Verify evidence, explain significance and avoid invented reporting, quotes or first-hand experience.
+- Use Car and Driver as selective inspiration, not a blueprint requiring all of its sections. Preserve AutoGlob's identity and add functionality only when justified by its content and resources.
+- Keep sources unobtrusive: avoid numbered markers cluttering the main text and prefer a compact collapsed reference block. Preserve necessary attribution and full research records; do not advertise other media in promotional copy.
+
 - Work on `GlobTechCo/AutoGlob`; preserve its name. Live site: `https://globtechco.github.io/AutoGlob/`.
 - Keep AutoGlob separate from TTN Finance and other projects. Never copy TTN Finance's Google Analytics code or measurement IDs into AutoGlob.
 - Write website articles in English for a U.S. audience. Explain work to the user in Ukrainian. For X, give a clean copy-ready English post first and a separate complete Ukrainian translation after it. Keep explanations outside the English post; honor task-specific character and hashtag limits.
@@ -12,3 +17,5 @@
 - Use maximally realistic editorial automotive images, neutral natural light, no cinematic effects or unsupported vehicle additions. Remove plates, overlay text, watermarks and windshield marks. Preserve authentic identifying details unless explicitly asked otherwise. Produce the best final output directly.
 - Update homepage/listing images alongside article images. Preserve quality at article display size. Keep links and controls working; investigate reported empty space instead of filling it decoratively.
 - Treat stated future guidance as durable rules. Save corrections in both the skill and repository. Complete authorized reviewable work autonomously rather than repeatedly asking.
+
+- Preserve approved existing BMW G20, Honda CR-V and Bugatti images. Audit and improve text independently; do not replace good imagery merely because prose needs correction.

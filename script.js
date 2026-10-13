@@ -1,30 +1,126 @@
 // AutoGlob — shared site script
 
 var ARTICLES = [
-  {"title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade", "url": "bmw-ix3-m60-2027.html", "keywords": "news bmw ix3 m60 2027"},
-  {"title": "Volvo EX60 P10: Beyond the 400-Mile Headline", "url": "volvo-ex60-p10-review.html", "keywords": "reviews volvo ex60 p10 review"},
-  {"title": "Corvette Grand Sport X: What 721 HP and AWD Change", "url": "corvette-grand-sport-x-test-analysis.html", "keywords": "test drives corvette grand sport x test analysis"},
-  {"title": "The BMW 528i E39 and the Value of an Ordinary 5 Series", "url": "bmw-528i-e39-story.html", "keywords": "stories bmw 528i e39 story"},
-  {"title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs", "url": "gas-hybrid-ev-ownership-cost-guide.html", "keywords": "stories gas hybrid ev ownership cost guide"},
-  { title: "Naturally Aspirated V12s: Three Different Ways Forward", url: "naturally-aspirated-v12-holdouts.html", keywords: "naturally aspirated v12 holdouts" },
-  { title: "Used EV Prices: Look Beyond the Discount", url: "used-ev-prices-fell.html", keywords: "used ev prices fell" },
-  { title: "DeLorean Before the Time Machine: The Company That Almost Wasn't", url: "delorean-before-time-machine.html", keywords: "delorean before time machine" },
-  { title: "Group B: The Rally Era That Was Too Fast to Live", url: "group-b-rally-era.html", keywords: "group b rally era" },
-  { title: "The Instrument Panel as Art: A Study of 1960s Dashboards", url: "1960s-dashboards-design.html", keywords: "1960s dashboards design" },
-  { title: "Tucker 48: The Car, the Company and the Myth", url: "tucker-car-too-honest-detroit.html", keywords: "tucker car too honest detroit" },
-  { title: "Inside a Classic Car Auction: What Actually Drives the Hammer Price", url: "classic-car-auction-hammer-price.html", keywords: "classic car auction hammer price" },
-  { title: "2026 Honda CR-V: Gas vs Hybrid", url: "honda-crv-first-test.html", keywords: "honda crv hybrid test drive review suv" },
-  { title: "The Electric C-Class Doesn't Look Like an EQ, and That's the Point", url: "mercedes-c-class-ev.html", keywords: "mercedes c-class ev electric c400 4matic" },
-  { title: "The BMW 330i Doesn't Need an M Badge to Be Good", url: "bmw-330i-review.html", keywords: "bmw 330i g20 3 series test drive review" },
-  { title: "The Chiron Era Is Over. Its Hybrid V16 Successor Doesn't Share a Single Part With It.", url: "bugatti-chiron.html", keywords: "bugatti chiron tourbillon hypercar w16 v16" },
-  { title: "Inside the Restoration of a 1934 Duesenberg", url: "duesenberg-1934-restoration.html", keywords: "duesenberg classic restoration 1934" },
-  { title: "VIN Decoder", url: "vin-decoder.html", keywords: "vin decode lookup nhtsa" },
-  { title: "Tire Size Calculator", url: "tire-size-calculator.html", keywords: "tire wheel size offset calculator" },
-  { title: "Fuel Cost Calculator", url: "fuel-cost-calculator.html", keywords: "fuel gas cost trip calculator" },
-  { title: "Car Loan Calculator", url: "loan-calculator.html", keywords: "loan payment finance calculator" },
-  { title: "Depreciation Calculator", url: "depreciation-calculator.html", keywords: "depreciation resale value calculator" },
-  { title: "EV Charging Cost Calculator", url: "ev-charging-calculator.html", keywords: "ev electric charging cost calculator" },
-  { title: "CO2 Emissions Calculator", url: "co2-calculator.html", keywords: "co2 emissions calculator environment" }
+  {
+    "title": "1934 Duesenberg Model J: What Restoration Must Preserve",
+    "url": "duesenberg-1934-restoration.html",
+    "keywords": "duesenberg 1934 restoration"
+  },
+  {
+    "title": "Naturally Aspirated V12s: Three Different Ways Forward",
+    "url": "naturally-aspirated-v12-holdouts.html",
+    "keywords": "naturally aspirated v12 holdouts"
+  },
+  {
+    "title": "1960s Car Dashboards: Design Beyond the Nostalgia",
+    "url": "1960s-dashboards-design.html",
+    "keywords": "1960s dashboards design"
+  },
+  {
+    "title": "Used EV Prices: Look Beyond the Discount",
+    "url": "used-ev-prices-fell.html",
+    "keywords": "used ev prices fell"
+  },
+  {
+    "title": "The BMW 528i E39 and the Value of an Ordinary 5 Series",
+    "url": "bmw-528i-e39-story.html",
+    "keywords": "bmw 528i e39 story"
+  },
+  {
+    "title": "BMW 330i G20: Why the Model Year Matters",
+    "url": "bmw-330i-review.html",
+    "keywords": "bmw 330i review"
+  },
+  {
+    "title": "Volvo EX60 P10: Beyond the 400-Mile Headline",
+    "url": "volvo-ex60-p10-review.html",
+    "keywords": "volvo ex60 p10 review"
+  },
+  {
+    "title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs",
+    "url": "gas-hybrid-ev-ownership-cost-guide.html",
+    "keywords": "gas hybrid ev ownership cost guide"
+  },
+  {
+    "title": "2027 Electric Mercedes C-Class: What U.S. Buyers Know",
+    "url": "mercedes-c-class-ev.html",
+    "keywords": "mercedes c class ev"
+  },
+  {
+    "title": "DeLorean Before the Time Machine: The Company That Almost Wasn't",
+    "url": "delorean-before-time-machine.html",
+    "keywords": "delorean before time machine"
+  },
+  {
+    "title": "From Chiron to Tourbillon: Bugatti Changes Its Formula",
+    "url": "bugatti-chiron.html",
+    "keywords": "bugatti chiron"
+  },
+  {
+    "title": "Group B Rally: Innovation Outran the Rules",
+    "url": "group-b-rally-era.html",
+    "keywords": "group b rally era"
+  },
+  {
+    "title": "Tucker 48: The Car, the Company and the Myth",
+    "url": "tucker-car-too-honest-detroit.html",
+    "keywords": "tucker car too honest detroit"
+  },
+  {
+    "title": "Classic Car Auction Prices: What the Hammer Leaves Out",
+    "url": "classic-car-auction-hammer-price.html",
+    "keywords": "classic car auction hammer price"
+  },
+  {
+    "title": "2026 Honda CR-V Gas vs Hybrid: Run the Numbers",
+    "url": "honda-crv-first-test.html",
+    "keywords": "honda crv first test"
+  },
+  {
+    "title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade",
+    "url": "bmw-ix3-m60-2027.html",
+    "keywords": "bmw ix3 m60 2027"
+  },
+  {
+    "title": "Corvette Grand Sport X: What 721 HP and AWD Change",
+    "url": "corvette-grand-sport-x-test-analysis.html",
+    "keywords": "corvette grand sport x test analysis"
+  },
+  {
+    "title": "VIN Decoder",
+    "url": "vin-decoder.html",
+    "keywords": "vin decoder"
+  },
+  {
+    "title": "Tire Size Calculator",
+    "url": "tire-size-calculator.html",
+    "keywords": "tire size calculator"
+  },
+  {
+    "title": "Fuel Cost Calculator",
+    "url": "fuel-cost-calculator.html",
+    "keywords": "fuel cost calculator"
+  },
+  {
+    "title": "Auto Loan Calculator",
+    "url": "loan-calculator.html",
+    "keywords": "loan calculator"
+  },
+  {
+    "title": "Car Depreciation Calculator",
+    "url": "depreciation-calculator.html",
+    "keywords": "depreciation calculator"
+  },
+  {
+    "title": "EV Charging Cost Calculator",
+    "url": "ev-charging-calculator.html",
+    "keywords": "ev charging calculator"
+  },
+  {
+    "title": "Car CO2 Emissions Calculator",
+    "url": "co2-calculator.html",
+    "keywords": "co2 calculator"
+  }
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -49,59 +145,83 @@ document.addEventListener('DOMContentLoaded', function () {
   var searchBtn = document.querySelector('.search-btn');
   if (searchBtn) {
     var overlay = document.createElement('div');
-    overlay.style.cssText = 'position:fixed;inset:0;z-index:200;background:rgba(8,22,37,0.92);' +
-      'display:none;align-items:flex-start;justify-content:center;padding:80px 20px;';
+    overlay.className = 'site-search-overlay';
+    overlay.setAttribute('role', 'dialog');
+    overlay.setAttribute('aria-modal', 'true');
+    overlay.setAttribute('aria-labelledby', 'siteSearchHeading');
+    overlay.id = 'siteSearchDialog';
     overlay.innerHTML =
-      '<div style="width:100%;max-width:560px;">' +
-      '  <div style="display:flex;gap:10px;align-items:center;margin-bottom:16px;">' +
-      '    <input id="siteSearchInput" type="text" placeholder="Search articles and tools..." autocomplete="off" ' +
-      '      style="flex:1;background:#0e1117;border:1px solid rgba(245,247,250,0.15);color:#f5f7fa;padding:12px 14px;border-radius:2px;font-family:Montserrat,sans-serif;font-size:15px;">' +
-      '    <button id="siteSearchClose" aria-label="Close search" style="background:none;border:none;color:#f5f7fa;font-size:22px;cursor:pointer;padding:4px 10px;">&times;</button>' +
-      '  </div>' +
-      '  <div id="siteSearchResults" style="display:flex;flex-direction:column;gap:2px;"></div>' +
-      '</div>';
+      '<div class="site-search-panel"><h2 id="siteSearchHeading">Search AutoGlob</h2>' +
+      '<div class="site-search-row"><label class="sr-only" for="siteSearchInput">Search articles and tools</label>' +
+      '<input id="siteSearchInput" type="search" placeholder="Search articles and tools…" autocomplete="off">' +
+      '<button id="siteSearchClose" type="button" aria-label="Close search">&times;</button></div>' +
+      '<p id="siteSearchStatus" class="site-search-status" role="status" aria-live="polite"></p>' +
+      '<div id="siteSearchResults" class="site-search-results"></div></div>';
     document.body.appendChild(overlay);
-
+    searchBtn.setAttribute('aria-haspopup', 'dialog');
+    searchBtn.setAttribute('aria-controls', overlay.id);
     var input = overlay.querySelector('#siteSearchInput');
     var results = overlay.querySelector('#siteSearchResults');
+    var status = overlay.querySelector('#siteSearchStatus');
     var closeBtn = overlay.querySelector('#siteSearchClose');
-
+    var previousFocus, previousOverflow, backgroundState = [];
     function openSearch() {
+      previousFocus = document.activeElement;
+      previousOverflow = document.body.style.overflow;
+      document.body.style.overflow = 'hidden';
+      backgroundState = Array.from(document.body.children).filter(function (node) {
+        return node !== overlay && node.tagName !== 'SCRIPT';
+      }).map(function (node) {
+        var state = {node: node, inert: node.inert};
+        node.inert = true;
+        return state;
+      });
       overlay.style.display = 'flex';
       input.value = '';
       renderResults('');
-      setTimeout(function () { input.focus(); }, 50);
+      input.focus();
     }
     function closeSearch() {
+      if (overlay.style.display !== 'flex') return;
       overlay.style.display = 'none';
+      document.body.style.overflow = previousOverflow;
+      backgroundState.forEach(function (state) { state.node.inert = state.inert; });
+      if (previousFocus && previousFocus.focus) previousFocus.focus();
     }
     function renderResults(query) {
       var q = query.trim().toLowerCase();
       var matches = q === '' ? ARTICLES : ARTICLES.filter(function (a) {
-        var haystack = (a.title + ' ' + (a.keywords || '')).toLowerCase();
-        return haystack.indexOf(q) !== -1;
+        return (a.title + ' ' + (a.keywords || '')).toLowerCase().indexOf(q) !== -1;
       });
-      if (matches.length === 0) {
-        results.innerHTML = '<p style="color:#64707d;font-family:Montserrat,sans-serif;font-size:14px;padding:12px 4px;">No matches. Try a different word.</p>';
-        return;
-      }
-      results.innerHTML = matches.map(function (a) {
-        return '<a href="' + a.url + '" style="display:block;padding:12px 14px;color:#f5f7fa;font-family:Montserrat,sans-serif;font-size:14.5px;' +
-          'border-bottom:1px solid rgba(245,247,250,0.08);text-decoration:none;">' + a.title + '</a>';
-      }).join('');
+      status.textContent = matches.length ? matches.length + ' results' : 'No matches. Try a different word.';
+      results.replaceChildren();
+      matches.forEach(function (article) {
+        var a = document.createElement('a');
+        a.href = article.url;
+        a.textContent = article.title;
+        results.appendChild(a);
+      });
     }
-
     searchBtn.addEventListener('click', openSearch);
     closeBtn.addEventListener('click', closeSearch);
     overlay.addEventListener('click', function (e) { if (e.target === overlay) closeSearch(); });
-    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeSearch(); });
+    overlay.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') { e.preventDefault(); closeSearch(); return; }
+      if (e.key !== 'Tab') return;
+      var focusable = overlay.querySelectorAll('input, button, a[href]');
+      var first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    });
     input.addEventListener('input', function () { renderResults(input.value); });
   }
 
   // Remember the visitor's cookie preference.
   // Simple cookie consent banner
   var CONSENT_KEY = 'autoglob_cookie_consent';
-  if (!localStorage.getItem(CONSENT_KEY)) {
+  var consent;
+  try { consent = localStorage.getItem(CONSENT_KEY); } catch (e) {}
+  if (!consent) {
     var banner = document.createElement('div');
     banner.setAttribute('role', 'dialog');
     banner.setAttribute('aria-label', 'Cookie consent');
@@ -110,24 +230,25 @@ document.addEventListener('DOMContentLoaded', function () {
       'display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between;' +
       'max-width:920px;margin:0 auto;font-family:Montserrat,sans-serif;color:#f5f7fa;font-size:13.5px;';
     banner.innerHTML =
-      '<span style="max-width:56ch;color:#64707d;">We remember your preference on this device. See our ' +
+      '<span style="max-width:56ch;color:#b0becd;">We remember your preference on this device. See our ' +
       '<a href="cookies.html" style="color:#12d6d0;">Cookie Policy</a>.</span>' +
       '<span style="display:flex;gap:10px;flex-shrink:0;">' +
-      '<button id="cookieDecline" style="background:none;border:1px solid rgba(245,247,250,0.15);color:#64707d;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Decline</button>' +
+      '<button id="cookieDecline" style="background:none;border:1px solid rgba(245,247,250,0.15);color:#b0becd;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Decline</button>' +
       '<button id="cookieAccept" style="background:#12d6d0;border:none;color:#081625;font-weight:700;padding:9px 14px;border-radius:2px;font-size:13px;cursor:pointer;">Accept</button>' +
       '</span>';
     document.body.appendChild(banner);
 
     document.getElementById('cookieAccept').addEventListener('click', function () {
-      localStorage.setItem(CONSENT_KEY, 'accepted');
+      try { localStorage.setItem(CONSENT_KEY, 'accepted'); } catch (e) {}
       banner.remove();
     });
     document.getElementById('cookieDecline').addEventListener('click', function () {
-      localStorage.setItem(CONSENT_KEY, 'declined');
+      try { localStorage.setItem(CONSENT_KEY, 'declined'); } catch (e) {}
       banner.remove();
     });
   }
 });
+
 
 
 

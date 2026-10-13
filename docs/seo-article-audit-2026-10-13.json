@@ -1,0 +1,138 @@
+[
+  {
+    "path": "1960s-dashboards-design.html",
+    "title": "1960s Car Dashboards: Design Beyond the Nostalgia",
+    "images": 1,
+    "sources": 3,
+    "action": "Переписано навколо конкретного салону Corvette 1963. Прибрано універсальні твердження про матеріали й безпеку. 1 ілюстрація за фабричним референсом.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "bmw-330i-review.html",
+    "title": "BMW 330i G20: Why the Model Year Matters",
+    "images": 4,
+    "sources": 2,
+    "action": "Переписано як аналіз купівлі G20. Розділено ранню конфігурацію та сучасну специфікацію США. Усі 4 наявні зображення збережено.",
+    "preserved_approved_image_paths": true
+  },
+  {
+    "path": "bmw-528i-e39-story.html",
+    "title": "The BMW 528i E39 and the Value of an Ordinary 5 Series",
+    "images": 4,
+    "sources": 4,
+    "action": "Перевірено роки/ринок, параметри та референси одного автомобіля. Наявний виправлений комплект збережено.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "bmw-ix3-m60-2027.html",
+    "title": "BMW’s 603-HP iX3 M60 Is More Than a Power Upgrade",
+    "images": 3,
+    "sources": 2,
+    "action": "Перевірено розмежування анонсу/виробництва, 0–62 проти 0–60 та невідомі EPA/ціну. Основний текст і зображення збережено.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "bugatti-chiron.html",
+    "title": "From Chiron to Tourbillon: Bugatti Changes Its Formula",
+    "images": 4,
+    "sources": 2,
+    "action": "Виправлено хронологію Chiron / Tourbillon, межі завершення W16 та датовані плани. Усі 4 зображення збережено; підписи Chiron більше не називають його Tourbillon.",
+    "preserved_approved_image_paths": true
+  },
+  {
+    "path": "classic-car-auction-hammer-price.html",
+    "title": "Classic Car Auction Prices: What the Hammer Leaves Out",
+    "images": 1,
+    "sources": 2,
+    "action": "Переписано: ставка, підсумкова сума, умови конкретного аукціону, стан і порівнюваність продажів. 1 нейтральна ілюстрація без чужого автомобіля.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "corvette-grand-sport-x-test-analysis.html",
+    "title": "Corvette Grand Sport X: What 721 HP and AWD Change",
+    "images": 3,
+    "sources": 3,
+    "action": "Перевірено комбіновану потужність, заявлене й виміряне прискорення та різні шини в порівняннях. Зображення збережено.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "delorean-before-time-machine.html",
+    "title": "DeLorean Before the Time Machine: The Company That Almost Wasn't",
+    "images": 3,
+    "sources": 3,
+    "action": "Повторно переглянуто історію та вже виправлені референси DMC-12; комплект збережено.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "duesenberg-1934-restoration.html",
+    "title": "1934 Duesenberg Model J: What Restoration Must Preserve",
+    "images": 1,
+    "sources": 1,
+    "action": "Вигаданий репортаж із майстерні замінено документальним аналізом шасі 2550 / кузова Brunn. 1 нова ілюстрація за конкретним каталогом.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "gas-hybrid-ev-ownership-cost-guide.html",
+    "title": "Gas, Hybrid or EV? Calculate What Your Car Really Costs",
+    "images": 3,
+    "sources": 3,
+    "action": "Перевірено арифметику кредиту, приклади та уникнення подвійного рахунку придбання/амортизації. У Tools не додавали статтю.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "group-b-rally-era.html",
+    "title": "Group B Rally: Innovation Outran the Rules",
+    "images": 1,
+    "sources": 3,
+    "action": "Переписано: омологація, еволюції, межа WRC після 1986 та інші дисципліни. 1 Audi S1 за референсом 1985 року.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "honda-crv-first-test.html",
+    "title": "2026 Honda CR-V Gas vs Hybrid: Run the Numbers",
+    "images": 5,
+    "sources": 2,
+    "action": "Прибрано вигаданий власний тест. Уточнено потужність системи, момент електромотора, EPA за приводом/версією та прозорий приклад економії. Усі 5 зображень збережено.",
+    "preserved_approved_image_paths": true
+  },
+  {
+    "path": "mercedes-c-class-ev.html",
+    "title": "2027 Electric Mercedes C-Class: What U.S. Buyers Know",
+    "images": 1,
+    "sources": 2,
+    "action": "Переписано за офіційним анонсом США; WLTP відокремлено від EPA, прибрано непідтверджену ціну. Замість чужої моделі — 1 ілюстрація правильного екстер’єру.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "naturally-aspirated-v12-holdouts.html",
+    "title": "Naturally Aspirated V12s: Three Different Ways Forward",
+    "images": 3,
+    "sources": 3,
+    "action": "Перевірено окремі автомобілі та різницю між атмосферним двигуном і гібридизацією. Підписи розрізняють три моделі.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "tucker-car-too-honest-detroit.html",
+    "title": "Tucker 48: The Car, the Company and the Myth",
+    "images": 3,
+    "sources": 4,
+    "action": "Перевірено історію компанії, кількість машин і шасі 1001; прибрано службову фразу про чужу ілюстрацію. Комплект збережено.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "used-ev-prices-fell.html",
+    "title": "Used EV Prices: Look Beyond the Discount",
+    "images": 3,
+    "sources": 4,
+    "action": "Перевірено обмеження висновків про ціни, комплектацію, стан батареї й витрати. Збережено виправлені ілюстрації.",
+    "preserved_approved_image_paths": false
+  },
+  {
+    "path": "volvo-ex60-p10-review.html",
+    "title": "Volvo EX60 P10: Beyond the 400-Mile Headline",
+    "images": 3,
+    "sources": 4,
+    "action": "Перевірено P10 проти P12, залежність EPA від коліс і атрибуцію незалежних вимірювань. Зображення збережено.",
+    "preserved_approved_image_paths": false
+  }
+]

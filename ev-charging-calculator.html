@@ -1,26 +1,27 @@
 <!DOCTYPE html>
+
 <html lang="en-US">
 <head>
 <script>(function(){var t;try{t=localStorage.getItem('autoglob_theme');}catch(e){}document.documentElement.dataset.theme=(t==='dark'||t==='light')?t:(window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');})();</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>EV Charging Cost Calculator: Home Charge Cost | AutoGlob</title>
-<meta name="description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
-<meta name="robots" content="index,follow,max-image-preview:large">
-<link rel="canonical" href="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="AutoGlob">
-<meta property="og:locale" content="en_US">
-<meta property="og:title" content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob">
-<meta property="og:description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
-<meta property="og:url" content="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html">
-<meta property="og:image" content="https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp">
-<meta property="og:image:alt" content="EV Charging Cost Calculator">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob">
-<meta name="twitter:description" content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions.">
-<meta name="twitter:image" content="https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp">
-<meta name="twitter:image:alt" content="EV Charging Cost Calculator">
+<meta content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions." name="description"/>
+<meta content="index,follow,max-image-preview:large" name="robots"/>
+<link href="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html" rel="canonical"/>
+<meta content="website" property="og:type"/>
+<meta content="AutoGlob" property="og:site_name"/>
+<meta content="en_US" property="og:locale"/>
+<meta content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob" property="og:title"/>
+<meta content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions." property="og:description"/>
+<meta content="https://globtechco.github.io/AutoGlob/ev-charging-calculator.html" property="og:url"/>
+<meta content="https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp" property="og:image"/>
+<meta content="EV Charging Cost Calculator" property="og:image:alt"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="EV Charging Cost Calculator: Home Charge Cost | AutoGlob" name="twitter:title"/>
+<meta content="Estimate EV charging costs from battery capacity, start and target charge, and electricity price per kWh. Includes charging-loss assumptions." name="twitter:description"/>
+<meta content="https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp" name="twitter:image"/>
+<meta content="EV Charging Cost Calculator" name="twitter:image:alt"/>
 <script type="application/ld+json">{
   "@context": "https://schema.org",
   "@graph": [
@@ -110,132 +111,125 @@
     }
   ]
 }</script>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="icon" href="favicon.ico">
-<link rel="preload" href="styles.css?v=11" as="style">
-<link rel="stylesheet" href="styles.css?v=11">
-<link rel="stylesheet" href="theme.css?v=1">
-<script src="theme.js?v=1" defer></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;0,800;1,500;1,600&amp;display=swap" rel="stylesheet"/>
+<link href="favicon.ico" rel="icon"/>
+<link as="style" href="styles.css?v=12" rel="preload"/>
+<link href="styles.css?v=12" rel="stylesheet"/>
+<link href="theme.css?v=2" rel="stylesheet"/>
+<script defer="" src="theme.js?v=1"></script>
 </head>
-<body>
-
+<body><a class="skip-link" href="#main-content">Skip to content</a>
 <header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="brand">
-      <picture>
-        <source srcset="logo.webp" type="image/webp">
-        <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
-      </picture>
-    </a>
-    <nav class="main-nav" id="mainNav">
-      <a href="news.html">News</a>
-      <a href="reviews.html">Reviews</a>
-      <a href="test-drives.html">Test Drives</a>
-      <a href="stories.html">Stories</a>
-      <a href="tools.html" class="active">Tools</a>
-      <a href="about.html">About Us</a>
-    </nav>
-    <div class="header-actions">
-      <button class="icon-btn search-btn" aria-label="Search"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></button>
-      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </div>
-</header>
-
-<div class="container static-page">
-  <p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / EV Charging Cost Calculator</p>
-  <h1 class="page-title">EV Charging Cost Calculator</h1>
-  <p class="tool-intro">Work out what a full charge actually costs based on your EV's battery capacity, your electricity price, and charger efficiency losses.</p>
-
-  <div class="tool-layout">
-    <div class="tool-form">
-      <div class="tool-row">
-      <div class="tool-field">
-        <label for="battery">Battery Capacity (kWh)</label>
-        <input type="number" id="battery" placeholder="75">
-      </div>
-      <div class="tool-field">
-        <label for="fromPct">Charge From (%)</label>
-        <input type="number" id="fromPct" placeholder="20">
-      </div>
-      </div>
-      <div class="tool-row">
-      <div class="tool-field">
-        <label for="toPct">Charge To (%)</label>
-        <input type="number" id="toPct" placeholder="100">
-      </div>
-      <div class="tool-field">
-        <label for="rate">Electricity Price ($/kWh)</label>
-        <input type="number" id="rate" placeholder="0.16" step="0.01">
-      </div>
-      </div>
-      <button class="btn" id="calcBtn" type="button">Calculate Cost</button>
-      <p id="calcError" class="tool-error" style="display:none;"></p>
-    </div>
-
-    <div class="tool-result" aria-live="polite" id="resultBox" style="display:none;">
-      <h3>Result</h3>
-      <div class="tool-result-value" id="chargeCost">—</div>
-      <p class="tool-result-label">cost for this charge</p>
-      <table class="tool-result-table">
-        <tr><td>Energy added</td><td id="energyAdded">—</td></tr>
-        <tr><td>Cost per full 0-100% charge</td><td id="fullCost">—</td></tr>
-      </table>
-      <p class="tool-disclaimer">Uses a fixed 90% charging-efficiency assumption. Actual energy losses and electricity charges vary. Public session, idle and parking fees are not included.</p>
-    </div>
-  </div>
-
-  <section class="prose tool-guide"><h2>How to calculate home EV charging cost</h2><p>Enter battery capacity in kWh, the starting and target charge percentages and electricity price per kWh. The calculator uses a fixed 90% charging-efficiency assumption: energy drawn from the wall equals energy added to the battery divided by 0.90.</p><h2>EV charging example</h2><p>Charging a 75-kWh battery from 20% to 80% adds 45 kWh to the battery. At the assumed efficiency, the wall supplies 50 kWh. At $0.16 per kWh, the estimated cost is $8.00. A full 0–100% charge at the same rate is approximately $13.33.</p><h2>EV charging cost questions</h2><h3>Does it calculate charging time?</h3><p>No. The tool estimates energy and cost, not charging duration or charging speed.</p><h3>Does it include public charging fees?</h3><p>No. Session fees, per-minute charges, idle fees, parking and subscription charges are not included.</p><h3>Why is wall energy higher than battery energy?</h3><p>The model allows for losses during charging. Actual efficiency differs by vehicle, charger, temperature and charging conditions.</p></section>
+<div class="container header-inner">
+<a class="brand" href="index.html">
+<picture>
+<source srcset="logo.webp" type="image/webp"/>
+<img alt="AutoGlob" class="brand-logo-img" decoding="async" height="98" src="logo.png" width="700"/>
+</picture>
+</a>
+<nav class="main-nav" id="mainNav">
+<a href="news.html">News</a>
+<a href="reviews.html">Reviews</a>
+<a href="test-drives.html">Test Drives</a>
+<a href="stories.html">Stories</a>
+<a class="active" href="tools.html">Tools</a>
+<a href="about.html">About Us</a>
+</nav>
+<div class="header-actions">
+<button aria-label="Search" class="icon-btn search-btn"><svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20"><circle cx="11" cy="11" r="8"></circle><line x1="21" x2="16.65" y1="21" y2="16.65"></line></svg></button>
+<button aria-expanded="false" aria-label="Open menu" class="nav-toggle" id="navToggle">
+<span></span><span></span><span></span>
+</button>
 </div>
-
+</div>
+</header><main id="main-content">
+<div class="container static-page">
+<p class="breadcrumb"><a href="index.html">Home</a> / <a href="https://globtechco.github.io/AutoGlob/tools.html">Car Tools &amp; Calculators</a> / EV Charging Cost Calculator</p>
+<h1 class="page-title">EV Charging Cost Calculator</h1>
+<p class="tool-intro">Work out what a full charge actually costs based on your EV's battery capacity, your electricity price, and charger efficiency losses.</p>
+<div class="tool-layout">
+<div class="tool-form">
+<div class="tool-row">
+<div class="tool-field">
+<label for="battery">Battery Capacity (kWh)</label>
+<input id="battery" placeholder="75" type="number"/>
+</div>
+<div class="tool-field">
+<label for="fromPct">Charge From (%)</label>
+<input id="fromPct" placeholder="20" type="number"/>
+</div>
+</div>
+<div class="tool-row">
+<div class="tool-field">
+<label for="toPct">Charge To (%)</label>
+<input id="toPct" placeholder="100" type="number"/>
+</div>
+<div class="tool-field">
+<label for="rate">Electricity Price ($/kWh)</label>
+<input id="rate" placeholder="0.16" step="0.01" type="number"/>
+</div>
+</div>
+<button class="btn" id="calcBtn" type="button">Calculate Cost</button>
+<p class="tool-error" id="calcError" style="display:none;"></p>
+</div>
+<div aria-live="polite" class="tool-result" id="resultBox" style="display:none;">
+<h3>Result</h3>
+<div class="tool-result-value" id="chargeCost">—</div>
+<p class="tool-result-label">cost for this charge</p>
+<table class="tool-result-table">
+<tr><td>Energy added</td><td id="energyAdded">—</td></tr>
+<tr><td>Cost per full 0-100% charge</td><td id="fullCost">—</td></tr>
+</table>
+<p class="tool-disclaimer">Uses a fixed 90% charging-efficiency assumption. Actual energy losses and electricity charges vary. Public session, idle and parking fees are not included.</p>
+</div>
+</div>
+<section class="prose tool-guide"><h2>How to calculate home EV charging cost</h2><p>Enter battery capacity in kWh, the starting and target charge percentages and electricity price per kWh. The calculator uses a fixed 90% charging-efficiency assumption: energy drawn from the wall equals energy added to the battery divided by 0.90.</p><h2>EV charging example</h2><p>Charging a 75-kWh battery from 20% to 80% adds 45 kWh to the battery. At the assumed efficiency, the wall supplies 50 kWh. At $0.16 per kWh, the estimated cost is $8.00. A full 0–100% charge at the same rate is approximately $13.33.</p><h2>EV charging cost questions</h2><h3>Does it calculate charging time?</h3><p>No. The tool estimates energy and cost, not charging duration or charging speed.</p><h3>Does it include public charging fees?</h3><p>No. Session fees, per-minute charges, idle fees, parking and subscription charges are not included.</p><h3>Why is wall energy higher than battery energy?</h3><p>The model allows for losses during charging. Actual efficiency differs by vehicle, charger, temperature and charging conditions.</p></section>
+</div>
 <div class="container"><section class="related-tools"><h2>More free car tools</h2><ul><li><a href="vin-decoder.html">VIN Decoder</a></li><li><a href="tire-size-calculator.html">Tire Size Calculator</a></li><li><a href="fuel-cost-calculator.html">Fuel Cost Calculator</a></li><li><a href="loan-calculator.html">Auto Loan Calculator</a></li><li><a href="depreciation-calculator.html">Car Depreciation Calculator</a></li><li><a href="ev-charging-calculator.html">EV Charging Cost Calculator</a></li><li><a href="co2-calculator.html">Car CO2 Emissions Calculator</a></li></ul></section></div>
-<footer class="site-footer">
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="brand">
-          <picture>
-            <source srcset="logo.webp" type="image/webp">
-            <img src="logo.png" alt="AutoGlob" class="brand-logo-img" width="700" height="98">
-          </picture>
-        </a>
-        <p>The automotive world in full — supercars, classics and forgotten brands. Stories, culture, value and market.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Explore</h4>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="tools.html">Tools</a></li>
-          <li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Categories</h4>
-        <ul>
-          <li><a href="news.html">News</a></li>
-          <li><a href="reviews.html">Reviews</a></li>
-          <li><a href="test-drives.html">Test Drives</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="cookies.html">Cookie Policy</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <span>© 2026 AutoGlob. All rights reserved.</span>
-      <span>Made for people who read the whole story.</span>
-    </div>
-  </div>
+</main><footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a class="brand" href="index.html">
+<picture>
+<source srcset="logo.webp" type="image/webp"/>
+<img alt="AutoGlob" class="brand-logo-img" decoding="async" height="98" loading="lazy" src="logo.png" width="700"/>
+</picture>
+</a>
+<p>Automotive news, researched reviews, history and practical tools. Time &amp; Road — stories behind the machines.</p>
+</div>
+<div class="footer-col">
+<h4>Explore</h4>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="tools.html">Tools</a></li>
+<li><a href="about.html">About</a></li><li><a href="sitemap.xml">Sitemap</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Categories</h4>
+<ul>
+<li><a href="news.html">News</a></li>
+<li><a href="reviews.html">Reviews</a></li>
+<li><a href="test-drives.html">Test Drives</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Legal</h4>
+<ul>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="cookies.html">Cookie Policy</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© 2026 AutoGlob. All rights reserved.</span>
+<span>Made for people who read the whole story.</span>
+</div>
+</div>
 </footer>
-
-<script src="script.js?v=11" defer></script>
+<script defer="" src="script.js?v=12"></script>
 <script>
 function calc(){
   const battery=+document.getElementById('battery').value;
@@ -260,6 +254,4 @@ document.getElementById('calcBtn').addEventListener('click',calc);
 </script>
 </body>
 </html>
-
-
 
