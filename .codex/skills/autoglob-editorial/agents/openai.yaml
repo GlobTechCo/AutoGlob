@@ -1,0 +1,4 @@
+interface:
+  display_name: "AutoGlob Editorial"
+  short_description: "Evidence-led articles and faithful car imagery"
+  default_prompt: "Use $autoglob-editorial to assess this AutoGlob article and choose verified sources and useful, faithful images for its specific story."
