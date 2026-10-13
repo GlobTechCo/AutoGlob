@@ -8,3 +8,5 @@ Save lasting corrections in the skill and project rules. Do not turn a one-artic
 
 
 AutoGlob is a commercial publication. Use experienced automotive journalistic judgment, original analysis and verified facts; no invented drives, quotes or people. Preserve good existing imagery during text/SEO fixes. Use Car and Driver selectively for inspiration, not as a catalog of sections to copy. Present necessary sources compactly without numbered prose markers.
+
+Required reporting sources are https://www.caranddriver.com/ , https://www.motortrend.com/ and https://www.topgear.com/ . Check current news/reporting/tests and cross-check primary brand records. Publish licensed original photos without semantic alterations; generation is not the default and requires a later explicit request. Verify rights per image for monetized editorial use and preserve required credits. Write fresh fact-based original analysis with attribution, not close paraphrases of complete articles. Read `.codex/skills/autoglob-editorial/references/sources-and-image-rights.md` for collection/rights decisions. This clarification supersedes older generation-first rules.

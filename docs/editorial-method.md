@@ -1,5 +1,8 @@
 # Editorial update — October 12, 2026
 
+Current policy — October 13, 2026: Car and Driver, MotorTrend and Top Gear are required reporting sources. New publication uses rights-cleared original photography; automatic generation and scene alteration are superseded. See `.codex/skills/autoglob-editorial/references/sources-and-image-rights.md`. The dated generated-image work below is a historical record, not the current default.
+
+
 Five original articles, three generated illustrations each. Vehicle identity, paint and trim are fixed within each article. Official imagery is used as the generation reference; generated scenes are explicitly labeled as illustrations.
 
 AutoGlob has not personally driven the new vehicles. Manufacturer claims and independent measurements are separated. No fictional first-person testing is presented. The ownership guide uses hypothetical inputs, not current financial offers.

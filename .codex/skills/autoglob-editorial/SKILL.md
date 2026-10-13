@@ -1,74 +1,64 @@
 ---
 name: autoglob-editorial
-description: Research, write, illustrate, audit and publish AutoGlob automotive articles and related X posts. Use for AutoGlob content, vehicle reference selection, generated car images, article image corrections, SEO or editorial website changes. Apply article-specific judgment rather than a fixed image or writing template.
+description: Research, write, audit and publish AutoGlob automotive articles and related X posts using current news, attributed tests and licensed original vehicle photography. Use for AutoGlob source monitoring, image rights verification, article corrections, SEO and editorial site changes. Apply article-specific judgment rather than a fixed image or writing template.
 ---
 
 # AutoGlob editorial judgment
 
-Read [project-rules.md](references/project-rules.md) for persistent project, language and publishing constraints. Apply later explicit user corrections without repeatedly requesting permission.
+Read [project-rules.md](references/project-rules.md) for persistent project, language and publishing constraints. Read [sources-and-image-rights.md](references/sources-and-image-rights.md) before selecting news sources or publishing photographs. Apply later explicit user corrections without repeatedly requesting permission.
 
-## Analyze before choosing images
+## Use the three designated sources
 
-Identify the article's purpose, factual claims, featured vehicles and evidence available. Distinguish a historical story, new-model announcement, concept reveal, comparison, road-test analysis, restoration story and calculator interface. Choose an editorial approach that fits this article.
+Check Car and Driver (https://www.caranddriver.com/), MotorTrend (https://www.motortrend.com/) and Top Gear (https://www.topgear.com/) for current automotive news, independent tests, reporting and image leads. Treat these as required reporting sources, not merely design inspiration. Use Autoblog and other relevant publications as supplements. Verify announcements, specifications and model-year facts against official brand pressrooms and primary records.
 
-Create a short working selection record: each image, what it explains, exact reference, vehicle identity and any limitation. Keep it in project provenance documentation; omit decorative or redundant images.
+Compare publication date, modification date and event date. Determine the latest meaningful reporting, not simply the first homepage item. Deduplicate coverage of the same event and record the exact source URL, dates, market, claims and independent measurements. Do not call an old article current because it was resurfaced or mechanically updated.
 
-Preserve good existing images during a text or SEO audit. A weak article is not a reason to regenerate its successful imagery. Replace or edit only an individually verified image defect or an explicit user-requested change; record the concrete reason. In the current BMW G20, Honda CR-V and Bugatti articles, retain the existing images and correct text/captions instead.
+Use permitted public discovery/search, explicitly permitted feeds or APIs, and source-specific access rules. Check terms, robots and feed/API conditions before building automated collection. A public page or RSS feed does not by itself grant republication, commercial scraping or image rights. Do not bypass paywalls/access controls or deploy a full-text scraper without a suitable permission basis. State concrete access gaps instead of inventing source contents.
 
-Set image count individually. Never impose three, four or five images, a universal front/interior/rear/console sequence, or a minimum number of scenes. A short concept reveal may need one verified exterior. A restoration story may benefit from several authentic details. Use zero images when none can be supported or legally sourced; explain the concrete gap without inventing evidence.
+## Write an original article from verified reporting
 
-Use distinct relevant views when useful. Repeating an angle against new backgrounds supplies no new information. A crop can clarify a visible feature; it cannot reveal a feature absent from the source.
+Treat AutoGlob as a commercial publication. Write with the care and judgment of an experienced automotive journalist. Establish the reader's question, consequential angle and evidence before drafting. Lead with the finding; explain mechanism, context and practical significance. Use U.S. model years and dated market facts precisely. Keep a story's structure and length appropriate to its subject; avoid fixed word counts, clichés, inflated claims and filler.
 
-For a concept with only exterior references, illustrate only the known exterior and visible details. Do not infer an interior, console, rear, engine bay, chassis or production specification. Distinguish concept, prototype, render, production car and movie replica. Never use a different model or generation to fill a gap.
+Interpret the user's rewrite request as a fresh fact-based article with original structure and analysis. Do not closely paraphrase a full copyrighted article, reproduce its distinctive sequence, copy expression or convert it sentence by sentence. Combine verified facts and useful context across suitable sources. Obtain actual authorization before reproducing licensed text or substantial tables.
 
-For a multi-car comparison or historical evolution, allow multiple models when the article calls for them. Identify each one and use its own references. Consistency does not mean forcing all cars to share one color or showing only one brand in a legitimate comparison.
+Attribute another outlet's exclusive reporting, quotations and measurements. Preserve the tested trim, tires, units, procedure and limitations. Separate manufacturer claims, independent results and AutoGlob calculations. Never turn a sourced drive or interview into AutoGlob's firsthand experience; do not invent quotes, people, credentials, pricing or price forecasts.
 
-## Preserve identity
+Keep necessary public attribution unobtrusive. Prefer contextual attribution and a compact collapsed source block over numbered markers throughout prose. Keep full research and image provenance in project documentation. Respect license-required visible credits and links even when reader retention is a commercial goal.
 
-For one-vehicle series, use references from the same physical car where practical, or a documented matching year/market/trim/configuration. Preserve model, generation, body style, year, paint, cabin color, lamps, bumpers, wheels, brakes, glass, mirrors, stance and visible controls. Keep that vehicle's exterior and cabin colors consistent throughout.
+Use Car and Driver selectively for editorial hierarchy and readability; do not copy branding, prose or its full section catalog. Preserve AutoGlob's identity and operating scope.
 
-Verify source identity before trusting captions or filenames: check that a rear photo shows the rear, a cabin matches the exterior, and a detail belongs to the right model. Do not mix pre-facelift and facelift parts, standard and performance trims, stock and modified components, or dashboard generations. Note source-car modifications when relevant; prefer references matching the article's subject.
+## Select original photographs and verify rights
 
-Use actual interior references for interiors. Preserve visible dashboard, wheel, instruments, radio/display, vents, console, gear selector, pedals and seats. Do not design absent hardware from exterior references. A location change does not authorize replacing parts.
+Publish authorized ORIGINAL photographs by default. Do not generate replacement imagery, change scenes/locations, redesign vehicles, remove identifying details or automatically edit photos. The user's October 13, 2026 correction supersedes older generation instructions. Generate or semantically edit images only after a later explicit task-specific request; lack of a suitable licensed photo is not permission to generate one.
 
-Prioritize U.S.-market configurations when that market is the subject. Use left-hand-drive references; do not mirror a right-hand-drive cabin to fabricate U.S. specification. Label other-market material when relevant. Respect historical identity over an automatic U.S. conversion.
+Trace each asset to its actual creator/rightsholder and original source. Check the specific image's license or written permission for the intended monetized editorial use, including scope, attribution, source link, transformations, duration and third-party exclusions. Inspect the image caption/credit, image-specific rights page, publisher terms and original brand pressroom or authorized photo archive. A photographer credit, downloadable CDN image or manufacturer credit alone is not permission.
 
-## Generate and inspect
+Record evidence per asset: original source and file URLs, creator, rightsholder, exact license/permission URL and version, checked date, permitted use, required credit, allowed technical processing and publication decision. Do not equate unknown rights with open rights. See the rights reference for decision criteria and the initial source assessment.
 
-Use the image-generation skill/tool for requested generation or semantic edits. Inspect local sources first. Aim directly for the best final asset; do not produce preview grids or intermediate alternatives unless requested. Repair a failed invariant with a targeted edit when needed.
+If publisher photography is not authorized, look for the same verified subject in an official pressroom with an applicable editorial permission, an image-specific commercial-compatible open license, or a public-domain record with a verified basis. If none is available, omit the image or retain the article in draft with the concrete missing permission. Do not send permission requests or purchase licenses without the user's authorization for that communication or expense.
 
-Use highly realistic journalistic automotive photography, neutral natural light, legible details and believable reflections. Avoid cinematic grading, dramatic effects and film grain. Choose scene and lighting per article instead of always using one studio/courtyard backdrop.
+Preserve originals' scene, framing and visible details, including plates, watermarks, credits and markings. Do not remove a watermark as a supposed rights fix. Apply only license-permitted technical resizing/compression/format conversion without changing visual content. Preserve an original file and rights evidence; honor terms requiring unchanged distribution.
 
-Change only scene or location unless explicitly asked otherwise. Add no aftermarket parts, bodywork, spoilers, roof racks, decals or accessories absent from the source. Remove all plates, overlay text, watermarks and windshield marks; retain authentic identifying emblems and factory controls unless asked to remove them. Do not erase useful controls or falsify instrument evidence merely to satisfy a generic no-text prompt. Avoid distracting extra cars, people and signage.
+## Choose views individually and preserve identity
 
-Compare each result with its own source and the selected series. Reject wrong wheels, lights, colors, model parts, cabin layouts, implausible geometry or duplicate compositions. Do not promise pixel-perfect 1:1 identity from generation. For exact documentary or technical evidence, use a properly authorized original photograph or omit the image. Label generated images as illustrations and link their references; never present them as a real road test, historical photograph or condition report.
+Analyze the article's purpose, featured vehicles and available evidence before selecting images. Set image count, placement and view individually; never impose a front/interior/rear/console sequence or three-to-five-image rule. Omit redundant decorative frames. For an exterior-only concept, use supported exterior views; never invent its cabin or hidden components.
 
-Write literal accurate alt text and captions. Never label unrelated stock as a named vehicle, engine, cabin or factory. Do not use generated scenes as proof of an event or measurement.
+Use photographs of the same physical car where practical, or documented matching year/market/trim/configuration. Preserve model, generation, body style, paint, cabin color, lights, bumpers, wheels, brakes, glass and visible controls. Keep each vehicle's color/configuration consistent. Identify distinct models in genuine multi-car comparisons; do not force them to share a color.
 
-## Research and write
+Verify identity before trusting filenames or captions. Do not mix facelift generations, stock/modified parts, performance/standard trims or dashboard layouts. Prioritize U.S.-market and left-hand-drive references when appropriate; label other-market vehicles and never mirror a cabin to fabricate specification. Use supported interior references and meaningful distinct views when available.
 
-Treat AutoGlob as a commercial publication whose value comes from useful, original journalism and returning readers. Write with the care and judgment of an experienced automotive journalist; do not claim personal credentials, interviews or road tests that did not occur.
+Preserve good approved existing imagery during text/SEO fixes. A weak text is not a reason to replace a good image. Existing BMW G20, Honda CR-V and Bugatti image sets remain approved unless a concrete image defect or a specific replacement instruction requires a change. Keep legacy generated-image labels honest until an authorized original is actually installed; do not relabel existing illustrations as real photographs.
 
-Before drafting, establish the reader's question, the reporting angle and the evidence. Lead with the consequential finding, then explain its mechanism, context and practical significance. Select sections to fit the story. Use precise language, realistic comparisons, dated market facts and clear U.S. model-year distinctions. Add original interpretation, not a paraphrase of a press release. Cut clichés, inflated claims, mechanical transitions, repeated conclusions and filler. Match reading time to the actual article. For an audit, review inherited articles as carefully as new ones.
-
-Use Car and Driver as inspiration for editorial hierarchy, readable layouts, photography and useful connections between stories. Do not copy its prose, branding or full section catalog. Choose features that fit AutoGlob's content and operating capacity; do not add empty marketplaces, rankings, subscriptions or untested product recommendations.
-
-Keep public source attribution proportionate. Prefer unobtrusive contextual attribution and a compact, collapsed sources block to numbered academic markers throughout the prose. Use official brands, institutions and original documents where suitable; retain attribution when using another publication's exclusive reporting or measurements. Keep full research and image provenance in project documentation. Prioritize relevant internal links for reader retention; do not disguise advertising, label genuine citations as affiliate links, or treat commercial goals as permission to suppress important evidence.
-
-Check official brand pressrooms and specifications for announcements, engineering, recalls and model-year facts. Use major automotive publications, including Autoblog, Car and Driver and others relevant to the topic, for context and independent reporting. Do not claim to have checked all large sites or audience rankings without evidence. Seek broad relevant coverage, not a token citation list.
-
-Verify freshness and U.S. applicability. Distinguish release date from event date, claims from measurements, combined hybrid output from combustion-engine output, and rumors from confirmed news. Separate original analysis from sourced facts. Avoid invented quotes, anecdotes, bylines, first-hand drives, price forecasts and certainty about market trends.
-
-Write original structured journalism with an angle appropriate to the topic. Avoid rigid section formulas, promotional tone and copied prose. Cite factual sources without advertising a publication in headlines or promotional copy. Preserve verification links. Correct captions or text when an image audit exposes factual errors; keep other scope focused.
+Write literal alt text and captions. Never use an unrelated car, cabin, wheel or engine as a named model. Do not use an illustration as documentary proof of an event, measurement or condition.
 
 ## Integrate and verify
 
-Install final images in the actual GitHub project, not only in chat. Preserve useful resolution and complete subject framing. Use responsive variants, meaningful dimensions, compression and versioned replacement filenames. Verify decoded files, nonzero size and uploads before publishing.
+Install authorized assets in the actual GitHub project. Preserve useful resolution and full subject framing. Use allowed responsive variants, real dimensions, compression and versioned filenames. Verify decoded nonempty files and uploaded blob hashes.
 
-Update article hero and inline images, archive/homepage cards, metadata/social previews, Article schema and sitemap together wherever changed imagery is consumed. Keep canonical URLs stable. Preserve publication dates and add honest modification dates. Match bylines and reading time to reality.
+Update the article, homepage/archive cards, social metadata, truthful Article schema and sitemap together where changed imagery or headlines are consumed. Keep canonical URLs stable; preserve publication dates and add honest modification dates. Use truthful bylines and realistic reading time.
 
-Verify the published article visually, image loading, navigation, both themes and relevant listings. Respect existing work and branch concurrency; write against the current expected head. Complete authorized fixes and publication without repeated confirmation. Report changes and real unresolved limitations concisely in Ukrainian.
+Verify the published page, image loading, visible required credits, navigation, both themes and relevant listings. Respect branch concurrency; publish against the current expected head. Complete authorized work autonomously and report results and concrete remaining limitations in Ukrainian.
 
 ## Learn from corrections
 
-Update this skill and the project's persistent rules when the user supplies a durable new rule. Reconcile conflicts and save both. Treat examples as examples: rear/interior views requested for one article are not a global sequence. Preserve the lasting principle and room for editorial judgment. Distinguish one-off preferences from future guidance using context.
+Save lasting guidance in this skill and the project rules, resolving older conflicting instructions rather than leaving both active. Treat individual examples as examples, not mandatory layouts. Keep the exact three source URLs and the original-photo publication policy persistent.

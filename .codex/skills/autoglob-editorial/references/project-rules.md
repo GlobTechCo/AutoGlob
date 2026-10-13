@@ -13,9 +13,14 @@
 - Apply relevant SEO: title, description, canonical, robots, Open Graph, Twitter cards, truthful schema, sitemap, alt text and internal links. Do not promise Google rankings or indexing.
 - Choose image quantity, placement, scene and subject for each article; never impose a universal front/interior/rear/console template or mandatory count.
 - Preserve one vehicle configuration/color within a one-car series. For multi-car comparisons, identify each car and preserve its own configuration/color. Never insert unrelated interiors, wheels or engines into a named vehicle's series.
-- Use authentic references for every depicted angle/component. For exterior-only concepts, show supported exterior views and visible details. Do not invent hidden parts to meet a template.
-- Use maximally realistic editorial automotive images, neutral natural light, no cinematic effects or unsupported vehicle additions. Remove plates, overlay text, watermarks and windshield marks. Preserve authentic identifying details unless explicitly asked otherwise. Produce the best final output directly.
+- Use authentic, rights-cleared original photographs for every depicted angle/component. For exterior-only concepts, show supported exterior views and visible details. Do not invent hidden parts to meet a template.
+- Publish licensed original photographs. Preserve their actual scene, framing, plates, watermarks, credits and visible details; apply only permitted technical processing. Do not generate or semantically alter images unless a later explicit task-specific instruction requests it. This supersedes older automatic generation/plate-removal rules.
 - Update homepage/listing images alongside article images. Preserve quality at article display size. Keep links and controls working; investigate reported empty space instead of filling it decoratively.
 - Treat stated future guidance as durable rules. Save corrections in both the skill and repository. Complete authorized reviewable work autonomously rather than repeatedly asking.
 
 - Preserve approved existing BMW G20, Honda CR-V and Bugatti images. Audit and improve text independently; do not replace good imagery merely because prose needs correction.
+
+- Required current reporting sources: https://www.caranddriver.com/ ; https://www.motortrend.com/ ; https://www.topgear.com/ . Use their news, reporting and independent tests, then cross-check brand/primary sources. These are not only design references.
+- Check specific image rights for monetized editorial publication. Public availability is not an open license; preserve license evidence and required visible credits. Trace publisher images to original authorized sources when possible.
+- Write fresh fact-based articles with original structure and analysis. Attribute sourced tests/reporting; do not copy expression or closely paraphrase a complete copyrighted article.
+- Respect source-specific terms for parsing, feeds and automated collection. Unknown permissions do not authorize scraping or republication.
