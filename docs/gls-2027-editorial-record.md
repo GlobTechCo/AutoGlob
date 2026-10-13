@@ -1,6 +1,6 @@
 # 2027 GLS — editorial verification, 2026-10-13
 
-Article: mercedes-gls-2027-update.html; Analysis; original English article for US readers.
+Article: mercedes-gls-2027-update.html; News; original English article for US readers.
 
 ## Verification
 All technical numbers from Mercedes-Benz USA sources linked in the article. 530 hp applies to GLS 580, not GLS 450. Acceleration explicitly manufacturer estimates. No road-test results or borrowed driving verdicts. Current generation debuted in 2019 for MY2020, so avoid an all-new-generation claim. Official GLS450 page shows $93,950 before destination; $95,500 appears in media including delivery, but a model-specific official delivery amount was not independently recovered. Use official base MSRP only. Official GLS580 page says Price Coming Soon; omit unverified price. Do not recycle March reveal as today's announcement.
@@ -69,3 +69,4 @@ User explicitly provided and instructed insertion of all four images; no third-p
     "b64len": 692028
   }
 ]
+Owner correction: classify the 2027 GLS update as News. Category synchronized across article, listings, search and structured data.
