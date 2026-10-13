@@ -42,3 +42,4 @@ Research included Car and Driver, MotorTrend, Road & Track, Edmunds, Autoblog, C
 35 HTML pages checked for local links, anchors and valid JSON-LD. Sitemap contains 33 indexable pages. Five article image series are isolated, three images each. Ten theme logic cases passed, including blocked local storage. In the live browser, both palettes render; theme preference survives article navigation and reload. Search finds the BMW 528i article. All three Volvo images loaded and belong to the Volvo series.
 
 ![Live dark theme preview](theme-dark-preview.jpg)
+

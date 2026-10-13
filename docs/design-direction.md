@@ -23,3 +23,4 @@ Use a compact headline, accurate byline and date, restrained hero sizing, readab
 The present static HTML implementation can support this redesign. A multi-page static generator with shared templates would reduce duplicated head, navigation and footer markup as the archive grows. Migrating to a framework is optional and should be driven by the publishing workflow rather than appearance alone.
 
 For the next iteration, create a reviewable homepage redesign first; preserve article URLs and canonical URLs, and validate desktop and mobile views. A full redesign has not been deployed by the SEO update.
+

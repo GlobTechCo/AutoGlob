@@ -1,0 +1,13 @@
+{
+  "passed": 7,
+  "tests": [
+    "fuel: US miles/MPG, mixed metric/MPG, invalid input",
+    "EV: charging losses, free electricity, invalid charge range",
+    "loan: amortization, zero APR, invalid down payment",
+    "depreciation: documented schedule, invalid fractional years",
+    "tire: unchanged diameter and speedometer, invalid ratio",
+    "CO2: EPA gasoline/diesel factors and equivalent metric input",
+    "VIN: rejects invalid identity before request, renders supplied API result"
+  ],
+  "vin_note": "API response fixture verifies UI behavior; not a live database-availability test."
+}
