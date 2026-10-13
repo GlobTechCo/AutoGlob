@@ -12,6 +12,10 @@ Owner clarification: October 13, 2026. This policy supersedes earlier generation
 
 Use official brand sources to verify announcements and specifications. Supplement with Autoblog, archives, museums and other sources relevant to each article. Record source and event dates, distinguish test evidence from manufacturer claims, and choose a fresh original reporting angle.
 
+## Brand-first image route
+
+A news item at Top Gear, Car and Driver or MotorTrend identifies the topic. For that exact vehicle, visit the brand’s official site/media pressroom first, locate its original media set and verify the brand’s terms and image-specific credit/permission. Publish that source’s authorized original. Check other authorized archives if the brand supplies no usable asset. Publisher-owned test photography is a separate asset: brand permission for a press photograph does not establish permission for the publisher’s own shot. This applies to all brands and models, not just Top Gear examples.
+
 ## Rights decisions
 
 Authorize an original image only with asset-specific evidence covering AutoGlob's intended publication:

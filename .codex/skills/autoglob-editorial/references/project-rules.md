@@ -24,3 +24,6 @@
 - Check specific image rights for monetized editorial publication. Public availability is not an open license; preserve license evidence and required visible credits. Trace publisher images to original authorized sources when possible.
 - Write fresh fact-based articles with original structure and analysis. Attribute sourced tests/reporting; do not copy expression or closely paraphrase a complete copyrighted article.
 - Respect source-specific terms for parsing, feeds and automated collection. Unknown permissions do not authorize scraping or republication.
+
+- For a model discovered in Top Gear, Car and Driver, MotorTrend or another outlet, check the corresponding brand’s official site/pressroom FIRST for original assets and publication permission. Do not limit the rights check to the outlet. Use the brand-authorized source asset, not an unrelated publisher photograph under assumed brand permission.
+- Explain sourced test numbers plainly: name who actually conducted the test and obtained the figures. Attribution means acknowledging that source, not claiming AutoGlob measured them.
