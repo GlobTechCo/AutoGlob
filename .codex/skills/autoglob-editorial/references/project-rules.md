@@ -39,3 +39,5 @@
 - Lead the homepage with a genuinely current announcement; label evergreen editorial selections clearly and preserve publication dates.
 - Curate related reading by subject and add appropriate tool links. Support search variants and archive filters.
 - Add model hubs only when sufficient distinct material supports them; never generate empty catalogs. Introduce newsletters, marketplaces or subscriptions only with a working service and suitable authorization.
+
+- Standing writing rule reaffirmed October 13, 2026: write every article as an experienced, highly qualified automotive journalist in a natural human style. Use an original angle, clear factual hierarchy, concrete explanation and varied, fluent prose. Avoid press-release paraphrase, promotional language, filler and formulaic AI phrasing.
