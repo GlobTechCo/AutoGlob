@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='utf-8'?>
+<?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://globtechco.github.io/AutoGlob/1960s-dashboards-design.html</loc>
@@ -68,14 +68,14 @@
     <loc>https://globtechco.github.io/AutoGlob/ev-charging-calculator.html</loc>
     <lastmod>2026-10-12</lastmod>
     <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/tools/tool-ev-charging.webp</image:loc>
+      <image:loc>https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp</image:loc>
     </image:image>
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/fuel-cost-calculator.html</loc>
     <lastmod>2026-10-12</lastmod>
     <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/tools/tool-fuel.webp</image:loc>
+      <image:loc>https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -94,8 +94,8 @@
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/</loc>
-    <lastmod>2026-10-12</lastmod>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+  <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/gsx-gray-hero-v2.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/loan-calculator.html</loc>
     <lastmod>2026-10-12</lastmod>
@@ -112,14 +112,11 @@
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/naturally-aspirated-v12-holdouts.html</loc>
-    <lastmod>2026-10-12</lastmod>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1511919884226-fd3cad34687c?w=1600&amp;q=80</image:loc>
-    </image:image>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/v12-ferrari-red-hero.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/v12-ferrari-red-wheel.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/v12-ferrari-red-profile.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/news.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/privacy.html</loc>
@@ -127,15 +124,15 @@
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/reviews.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/stories.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/test-drives.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/tire-size-calculator.html</loc>
@@ -146,22 +143,16 @@
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/tools.html</loc>
-    <lastmod>2026-10-12</lastmod>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+  <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/tools/fuel-petrol-red-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/tools/ev-home-charge-wide-v2.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/tucker-car-too-honest-detroit.html</loc>
-    <lastmod>2026-10-12</lastmod>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1580414057403-c5f451f30e1c?w=1600&amp;q=80</image:loc>
-    </image:image>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/tucker-maroon-hero.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/tucker-maroon-headlights.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/tucker-maroon-profile.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/used-ev-prices-fell.html</loc>
-    <lastmod>2026-10-12</lastmod>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1580273916550-e323be2ae537?w=1600&amp;q=80</image:loc>
-    </image:image>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/used-ev-tesla-front.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/used-ev-tesla-profile.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/used-ev-tesla-cabin.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/vin-decoder.html</loc>
     <lastmod>2026-10-12</lastmod>
@@ -197,33 +188,15 @@
   </url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/corvette-grand-sport-x-test-analysis.html</loc>
-    <lastmod>2026-10-12</lastmod>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/corvette-gsx-hero.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/corvette-gsx-detail.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/corvette-gsx-rear-detail.webp</image:loc>
-    </image:image>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/gsx-gray-hero-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/gsx-gray-wheel-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/gsx-gray-body-v2.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/bmw-528i-e39-story.html</loc>
-    <lastmod>2026-10-12</lastmod>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/e39-hero.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/e39-courtyard.webp</image:loc>
-    </image:image>
-    <image:image>
-      <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/e39-studio.webp</image:loc>
-    </image:image>
-  </url>
+    <lastmod>2026-10-13</lastmod>
+    <image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/bmw-e39-front-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/bmw-e39-rear-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/bmw-e39-cabin-v2.webp</image:loc></image:image><image:image><image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/bmw-e39-console-v2.webp</image:loc></image:image></url>
   <url>
     <loc>https://globtechco.github.io/AutoGlob/gas-hybrid-ev-ownership-cost-guide.html</loc>
-    <lastmod>2026-10-12</lastmod>
+    <lastmod>2026-10-13</lastmod>
     <image:image>
       <image:loc>https://globtechco.github.io/AutoGlob/assets/editorial/cost-camry-hero.webp</image:loc>
     </image:image>

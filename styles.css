@@ -899,3 +899,10 @@ a{ color: inherit; text-decoration: none; }
 .home-tools > p { color: var(--text-muted); }
 @media (max-width: 720px) { .related-tools ul, .tool-link-grid { grid-template-columns: 1fr; } .tool-row { flex-wrap: wrap; } .tool-row .tool-field { min-width: 100px; } }
 
+
+
+/* Reference-based article views retain the complete vehicle framing. */
+.reference-imagery .article-hero-media{aspect-ratio:auto;}
+.reference-imagery .article-hero-media img{display:block;height:auto;object-fit:contain;}
+.reference-imagery .prose figure img{height:auto;aspect-ratio:auto;object-fit:contain;}
+.reference-imagery .byline{flex-wrap:wrap;row-gap:6px;}
