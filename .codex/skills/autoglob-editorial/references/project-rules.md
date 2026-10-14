@@ -41,3 +41,5 @@
 - Add model hubs only when sufficient distinct material supports them; never generate empty catalogs. Introduce newsletters, marketplaces or subscriptions only with a working service and suitable authorization.
 
 - Standing writing rule reaffirmed October 13, 2026: write every article as an experienced, highly qualified automotive journalist in a natural human style. Use an original angle, clear factual hierarchy, concrete explanation and varied, fluent prose. Avoid press-release paraphrase, promotional language, filler and formulaic AI phrasing.
+
+- Preserve the complete image frame in article heroes, inline photos and homepage/archive cards. Use intrinsic proportions or object-fit:contain; never crop vehicles to fill a fixed frame or zoom them on hover. Check bumpers, roof and wheels at desktop and mobile widths.

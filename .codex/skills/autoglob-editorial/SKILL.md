@@ -68,3 +68,5 @@ Verify the published page, image loading, visible required credits, navigation, 
 ## Learn from corrections
 
 Save lasting guidance in this skill and the project rules, resolving older conflicting instructions rather than leaving both active. Treat individual examples as examples, not mandatory layouts. Keep the exact three source URLs and the original-photo publication policy persistent.
+
+- Preserve the complete image frame in article heroes, inline photos and homepage/archive cards. Use intrinsic proportions or object-fit:contain; never crop vehicles to fill a fixed frame or zoom them on hover. Check bumpers, roof and wheels at desktop and mobile widths.
