@@ -46,14 +46,36 @@ body { background:var(--bg); color:var(--text); }
 .collection-heading{max-width:760px;margin:30px 0}.collection-heading>p:last-child{color:var(--text-muted);line-height:1.7;font-size:17px}.collection-page .article-grid{margin-top:30px}.card h2{font-size:20px;line-height:1.35;margin:10px 0}.card h2 a{color:var(--text)}.card .story-kicker{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--cyan);margin:0}.card-media picture{display:block;height:100%}.card-media img{width:100%;height:100%;object-fit:cover}.collection-more{margin:36px 0}.collection-more a{color:var(--cyan);font-weight:700}.archive-filters{display:flex;gap:18px;align-items:end;flex-wrap:wrap;padding:22px;background:var(--bg-elevated);border:1px solid var(--line)}.archive-filters label{display:grid;gap:8px;font-size:13px;font-weight:600;flex:1;min-width:180px}.archive-filters select,.archive-filters button{padding:12px;background:var(--bg);color:var(--text);border:1px solid var(--line);font:inherit;min-height:44px}.archive-filters button{cursor:pointer}.archive-filters :focus-visible,.reading-next a:focus-visible{outline:2px solid var(--cyan);outline-offset:3px}.article-grid [hidden],.archive-empty[hidden]{display:none!important}#archive-status{margin:20px 0;color:var(--text-muted)}.reading-next{margin-top:40px;border-top:1px solid var(--line);padding-top:26px}.reading-next h2{margin:8px 0 20px}.next-grid{display:grid;gap:12px}.next-grid a{display:grid;grid-template-columns:1fr auto;gap:8px;padding:18px;border:1px solid var(--line);background:var(--bg-elevated);text-decoration:none;color:var(--text)}.next-grid a>span:first-child{grid-column:1/-1;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--text-muted)}.next-grid strong{font-size:16px;line-height:1.5}.site-search-results small{display:block;color:#b0becd;font-size:10px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:6px}.site-search-results span{display:block}.article-footer{display:flex;gap:8px;flex-wrap:wrap}.editorial-home .article-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.editorial-home .card{background:var(--page-card);color:var(--page-text);border-color:var(--page-line)}.editorial-home .card h2 a{color:var(--page-text)}.editorial-home .card-body>p{color:var(--page-muted)}.editorial-home .card-body .story-kicker{color:var(--page-accent)}.editorial-home .card-body{padding:20px}.editorial-home .lead-image picture,.editorial-home .news-image picture{display:block;height:100%}.editorial-home .lead-image img{height:100%;object-fit:cover}.editorial-home .news-image img{height:100%;object-fit:cover}
 @media(max-width:900px){.editorial-home .article-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:600px){.editorial-home .article-grid{grid-template-columns:1fr}.archive-filters{padding:16px}.archive-filters label{min-width:100%}.collection-heading>p:last-child{font-size:15px}}
 
-/* Preserve the full frame: vehicle images must not lose bumpers or wheels. */
+/* Let each frame follow its photograph: no crop, letterboxing or hover zoom. */
+.card-media,
+.article-grid.featured-first .card:first-child .card-media,
+.lead-image, .review-image, .news-image,
+.article-hero-media, .reference-imagery .article-hero-media {
+  aspect-ratio:auto;
+  height:auto;
+  min-height:0;
+  width:100%;
+  background:transparent;
+  align-self:start;
+  flex-shrink:0;
+}
+.card-media picture,
+.editorial-home .lead-image picture,
+.editorial-home .news-image picture,
+.review-image picture,
+.article-hero-media picture { display:block; width:100%; height:auto; }
 .card-media img,
 .editorial-home .lead-image img,
 .editorial-home .news-image img,
 .review-image img,
-.ownership-tool img { object-fit:contain; object-position:center; }
-.card-media, .lead-image, .review-image, .news-image { background:var(--page-image); }
+.article-hero-media img,
+.prose figure img {
+  display:block;
+  width:100%;
+  height:auto;
+  aspect-ratio:auto;
+  object-fit:contain;
+  transform:none;
+}
 .lead-image:hover img, .review-image:hover img { transform:none; }
-.article-hero-media, .reference-imagery .article-hero-media { aspect-ratio:auto; height:auto; }
-.article-hero-media picture { height:auto; }
-.article-hero-media img, .prose figure img { height:auto; aspect-ratio:auto; object-fit:contain; }
+.ownership-tool img { height:auto; object-fit:contain; }
