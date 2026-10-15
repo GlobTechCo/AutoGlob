@@ -112,3 +112,29 @@
 @media (prefers-reduced-motion: reduce) { .lead-image img, .review-image img { transition: none; } }
 
 
+
+/* Consistent homepage card heights. Keep the complete car in the 16:9 crop. */
+.editorial-home .article-grid .card-media {
+  position:relative;
+  width:100%;
+  aspect-ratio:16 / 9;
+  height:auto;
+  overflow:hidden;
+  flex-shrink:0;
+}
+.editorial-home .article-grid .card-media picture {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+}
+.editorial-home .article-grid .card-media img {
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  aspect-ratio:auto;
+  object-fit:cover;
+  object-position:50% 60%;
+  transform:none;
+}
